@@ -19,7 +19,7 @@
 .place-info .discontinued {font-size: 12px;color: #888; font-weight: bold; text-align: right; padding-right: 5px}
 
 .place-info-line {display: block; position: relative; overflow: hidden; min-height: 70px;}
-.place-btn-area {display: block; overflow: hidden; }
+.place-btn-area {display: flex; overflow: hidden; }
 .place-btn-area2 {position: absolute; right: 0; bottom: 20px;}
 .host-place-list li:first-child .place-btn-area {top: 14px}
 .btm-comfirm {background: #deecf8; position: fixed; bottom: 0; left: 0; right: 0; padding: 20px; font-weight: bold}
