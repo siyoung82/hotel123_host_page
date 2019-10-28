@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+
+/* main */
+.place-add {background: url("../images/cont-img01.png") center top no-repeat; background-size: 97px 97px; text-align: center; padding-top: 110px; font-weight: 700; margin:30% 0 20px 0;}
+.place-end {background: url("../images/cont-img02.png") center top no-repeat; background-size: 97px 97px; text-align: center; padding-top: 110px; font-weight: 700; margin:20% 0 10px 0;}
+
+.host-place-list li {border-bottom: 1px solid #E2E2E2; padding: 20px 0; overflow: hidden; position: relative;}
+.host-place-list li:first-child {padding-top: 5px;}
+.host-place-list .pic {width: 70px; height: 70px; position: absolute;left: 0; top: 0;}
+.host-place-list .pic img {border-radius:10px 10px;}
+.place-info {font-weight: 700;display: block; margin-top: 4px; margin-left: 80px;} 
+.place-info .place-name {font-size: 16px;}
+.place-info .add-state-ing {font-size: 14px; color: #2b95ec;}
+.place-info .add-state-end {font-size: 14px; color: #666666;}
+.place-info .add-state-end span {margin-right: 5px}
+.place-info .add-state-end strong{margin-right: 10px;}
+.place-info .sale {font-size: 12px;color: #E96331; font-weight: bold; text-align: right; padding-right: 5px}
+.place-info .discontinued {font-size: 12px;color: #888; font-weight: bold; text-align: right; padding-right: 5px}
+
+.place-info-line {display: block; position: relative; overflow: hidden; min-height: 70px;}
+.place-btn-area {display: block; overflow: hidden; }
+.place-btn-area2 {position: absolute; right: 0; bottom: 20px;}
+.host-place-list li:first-child .place-btn-area {top: 14px}
+.btm-comfirm {background: #deecf8; position: fixed; bottom: 0; left: 0; right: 0; padding: 20px; font-weight: bold}
+.num-txt {font-family: 'Roboto', sans-serif!important;}
+
+/* 숙소메인 */
+.hotel-info-top {position: relative; height: 100px;}
+.hotel-name-box {background:rgba(0, 0, 0, 0.5); position: absolute; top: 0; display: block; height: 100px; left: 0; right: 0; text-align: center; color: #fff;}
+.hotel-name-box .hotel-name {font-weight: bold; margin-top: 30px;}
+.hotel-img img {height: 100px; width: 100%}
+.reservation-info {background: #deecf8;display: flex; display: -webkit-box;display: -moz-box;display: -ms-flexbox; display: -webkit-flex; padding: 15px 0; justify-content: center; color: #435463}
+.reservation-info > div {text-align: center;border-right: 1px solid #BFC9D2; padding: 0 15px; width: 33.3%}
+.reservation-info > div:last-child {border-right: 0;}
+.income {background: #BCD5EB; display: flex; display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;padding: 12px 20px; justify-content: center;}
+.income .income-tit {background: url("../images/ico-coins.png")no-repeat; background-size: 14px 13px; font-size: 11px; padding-left: 20px; text-align: left; width: 60%; margin-top: 3px}
+.income .income-price {text-align: right; width: 40%;}
+.no-rooms {text-align: center; margin-top: 90px;}
+.add-rooms {color: #EC602B; text-align: center; font-size: 14px; margin-bottom: 20px!important;}
+
+
+/* 예약리스트 */
+.rooms-reserv-list {padding: 15px; position: relative}
+.rooms-reserv-list section {position: relative}
+#check-out .btn-more, #check-in .btn-more {position: absolute; right: 5px; top: 13px; font-size: 12px;}
+#check-out .btn-more span, #check-in .btn-more span {font-weight: bold;}
+.reserv-list li {border-bottom: 1px solid #E2E2E2; position: relative }
+.reserv-list li:first-child {border-top: 1px solid #E2E2E2;}
+.reserv-list li a {padding: 20px 10px; display: block}
+.reserv-list li .user-name {font-weight: bold; color: #000; border-right: 1px solid #E2E2E2; padding-right: 8px; margin-right: 8px}
+.reserv-list li .reserv-num {color: #666;}
+.state-circle {width: 6px; height: 6px; display: inline-block; border-radius: 100px 100px; vertical-align: top;margin-top: 7px; margin-right: 5px;}
+.state-circle.comfirm {background: #84C91B}
+.state-select {position: absolute; right: 0; top:15px;}
+.state-select select {color: #4c4c4c!important; font-size: 14px!important; outline: 0!important; background: url(../images/dropdown_b.png) no-repeat 90% 50%; background-size: 10px 6px;}
+.state-select select {width: 100px; padding: 0 10px!important; border-radius: 5px;border: solid 1px #A3BED5;background-color: #F2F6F9; height: 36px; color: #546371!important; box-shadow: none!important; }
+
+.comfirm-tabs {border-bottom: 0!important;}
+.comfirm-tabs>li.active>a, .comfirm-tabs>li.active>a:focus, .comfirm-tabs>li.active>a:hover {border: 0!important; color: #2b95ec!important; font-weight: bold;}
+.comfirm-tabs>li>a{border: 0!important; padding: 6px!important;margin-right: 0!important; color: #999!important}
+.rooms-reserv-list h2 {color: #2b95ec; font-size: 16px; padding-left: 6px; font-weight: bold; margin-bottom: 8px!important; margin-top: 25px!important}
+.rooms-reserv-list .btn-more{position: absolute; right: 5px; top: 5px; font-size: 12px;}
+.rooms-reserv-list .btn-more span {font-weight: bold;}
+
+/* 숙소등록 */
+.process-area { display: flex; display: -webkit-box;display: -moz-box;display: -ms-flexbox; display: -webkit-flex;padding: 11px 3px 0 10px; background: #E4EFF9; position: fixed; top:46px; left: 0; right: 0; z-index: 50}
+.process-tit {width: 60%; font-size: 14px; color: #546371;}
+.process-bar {counter-reset: step; width: 40%; margin-bottom: 0; z-index: 50}
+
+.process-bar li {
+  list-style-type: none;
+  float: left;
+  width: 25%;
+  position: relative;
+  text-align: center;
+  font-size: 10px;
+}
+
+.process-bar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border: 1px solid #B9C9D8;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #B9C9D8;
+  font-size: 10px;
+  z-index: 10;
+}
+
+.process-bar li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #B9C9D8;
+  top: 8px;
+  left: -50%;
+  z-index: -1;
+}
+.process-bar li:first-child:after {content: none;}
+.process-bar li.active {color: #fff;}
+.process-bar li.active:before {border-color: #2B95EC; background-color: #2B95EC}
+.process-bar li.active + li:after { background-color: #2B95EC;}
+.input-btm-txt {font-size: 12px; color: #435463; padding: 6px}
+.cont-box-20 {padding: 20px 20px 70px;  }
+.cont-box-20 h2 {font-weight: bold; color: #2B95EC; font-size: 16px; margin-top: 0!important}
+.cont-box-20 h3 {font-size: 14px;}
+.cont-box-0 {padding: 0 0 0;  }
+.cont-box-0 h2 {font-weight: bold; color: #2B95EC; font-size: 16px; margin-top: 0!important; margin-bottom: 0!important; padding: 20px; background: #fff;}
+.cont-box-0 h3 {font-size: 14px; margin-top: 0px!important; font-weight: bold;}
+.add-pic-area {position: relative; overflow: hidden;}
+.add-pic-list {border: 1px solid #E2E2E2; position: relative; margin-bottom: 10px;}
+.add-pic-list .add-pic img {width: 70px; height: 70px;}
+.add-pic-list .add-pic {display: flex; display: -webkit-box;display: -moz-box;display: -ms-flexbox; display: -webkit-flex;}
+.add-pic-list .add-pic .pic-area {width: 80px; position: relative}
+.add-pic-list .add-pic .pic-area span {display: inline-block; color: #fff; font-size: 9px; background: #2B95EC; padding: 3px 5px; position: absolute; top: 0; left: 0;}
+.add-pic-list .add-pic .pic-txt {width:calc(90% - 60px); font-size: 12px; padding: 14px 0 0 0; position: relative;}
+.add-pic-list .btn-pic-del {position: absolute; right: 8px; top:12px; background: url("../images/btn-del.png") no-repeat left top; background-size: 18px 18px; width: 22px; height: 22px;}
+.add-pic-list .btn-pic-del span {font-size: 0; line-height: 0; display: none;}
+.check-area {text-align: right; margin-top: 13px;}
+
+.cont-area {position: relative; background: #fff; padding: 20px; margin-top: 10px}
+.cont-area .cont-area-top {position: absolute; height: 10px; background: #F6F6F6; padding: 0!important; display: block;}
+.service-list {width: 100%; display: flex; flex-wrap: wrap;}
+.service-list > div {border: 1px solid #E2E2E2; width: 20%; text-align: center; font-size: 10px; height: 56px; margin-left: -1px; margin-top: -1px; }
+.service-list a {display: block}
+.service-list a img {margin-top: 12px;}
+.service-list > div:hover {background: #E4EFF9; color:#2B95EC!important; font-weight: bold;}
+.service-list > div.add {background: #E4EFF9;}
+.cont-area .wd70 {width: 65%; float: left}
+.cont-area .wd30 {width: 35%; float: right; text-align: right;}
+
+.ico-service {background:url("../images/ico-service.png") left top no-repeat; display:inline-block;background-size:16px 100px; text-indent:-99999px; text-align: center; margin-top: 12px;}
+.ico-service-menu01 {width:16px; height:14px;  background-position:0 0px; }
+.ico-service-menu02 {width:16px; height:14px;  background-position:0 0px; }
+.ico-service-menu03 {width:16px; height:14px;  background-position:0 0px; }
+.ico-service-menu04 {width:16px; height:14px;  background-position:0 0px; }
+.ico-service-menu05 {width:16px; height:14px;  background-position:0 0px; }
+.ico-service-menu06 {width:16px; height:14px;  background-position:0 0px; }
+.ico-service-menu07 {width:16px; height:14px;  background-position:0 0px; }
+
+
+/* 객실관리 */
+.hotel-select-wrap {position: relative; height: 70px;}
+.hotel-select-box {background:rgba(0, 0, 0, 0.5); position: absolute; top: 0; display: block; height: 70px; left: 0; right: 0; text-align: center; color: #fff;}
+.hotel-select-box .hotel-name {font-weight: bold; margin-top: 30px; }
+.hotel-img img {height: 70px; width: 100%}
+
+/* 달력 */
+.reserv_calendar td, .reserv_calendar th{border: 0!important; text-align: center; }
+.reserv_calendar td {font-family: 'roboto'; font-size: 14px; padding: 10px 0!important; background: #fff!important; position: relative}
+.reserv_calendar td a {width: 32px; height: 32px; display: inline-block; line-height: 32px; }
+.reserv_calendar th {background: #CFE0EF; color: #435463; font-size: 12px;}
+.reserv_calendar td.sunday a,.reserv_calendar th.sunday{color: #EC2647!important}
+.reserv_calendar td.saturday a,.reserv_calendar th.saturday{color: #1378EC!important}
+.reserv_calendar td.muted {color: #Aaa;}
+.reserv_calendar td a:hover,.reserv_calendar td a.select {background: #2B95EC; border-radius: 100% 100%; color: #fff!important;}
+.reserv_calendar td a.today {border:1px solid #2B95EC; border-radius: 100% 100%; color: #2B95EC!important;}
+.data-box {position: absolute; bottom: -5px; display: block; text-align: center; width: 30px; left: 50%; margin-left: -15px;}
+.circle-cancel {background: #FF4D4D; width: 6px; height: 6px; display: inline-block; border-radius: 100% 100%; margin: 0 2px}
+.circle-comfirm {background: #2B95EC; width: 6px; height: 6px; display: inline-block; border-radius: 100% 100%; margin: 0 2px}
+.circle-wait {background: #84C91B; width: 6px; height: 6px; display: inline-block; border-radius: 100% 100%; margin: 0 2px}
+.reserv_calendar th.month-title-area {font-size: 19px; color: #435463 ; padding: 10px;}
+.reserv_calendar th a.month-title {padding: 0 10px; margin-top: 3px; display: inline-block; vertical-align: middle;}
+
+/* form */
+.input-area {margin-bottom: 10px!important; position: relative; overflow: hidden}
+.input-area label {font-size: 12px!important; color: #4c4c4c!important; font-weight: normal!important}
+.input-area input[type="text"],.input-area input[type="password"],.input-area .select-styled,.input-area select {padding: 0 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; height: 44px; color: #4c4c4c!important; box-shadow: none!important; }
+.input-area input[type="text"].v1 {padding: 0 90px 0 12px!important}
+.input-area input::placeholder,.input-area textarea::placeholder{color: #8DA1B1!important; font-size: 14px!important}
+.input-area select{outline: 0!important; background: url(../images/dropdown_b.png) no-repeat 95% 50%; background-size: 14px 8px;}
+.input-area textarea {padding: 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; color: #4c4c4c!important; box-shadow: none!important; height: 130px!important;}
+.input-area .input-in-btn {position: absolute; right: 0; top: 0; background: #C8DBEC; font-size: 14px; height: 44px; padding: 0 15px; line-height: 44px; font-weight: bold; color: #435463!important; border-radius: 0 5px 5px 0}:hover{}
+
+.input-area textarea:hover,.input-area input[type="text"]:hover,.input-area select:hover {border: 1px solid #2B95EC;}
+
+.hotel-select select{border:0!important; background: transparent url(../images/dropdown-b-w.png) no-repeat right 50%; background-size: 14px 8px; font-size: 18px;  font-weight: bold; color: #fff; margin-top: 20px; outline: 0!important; box-shadow:0 0 0 0!important; width: auto!important; text-align: left; display: inline-block; padding: 6px 17px 6px 12px!important} 
+.hotel-select select option {color: #333;}
+.input-result {margin-bottom: 10px;padding: 0 12px!important; border-radius: 5px;border: solid 1px #F1F1F1;background-color: #F1F1F1; height: 44px; color: #4c4c4c!important; line-height: 44px; position: relative}
+.input-result .btn-del {position: absolute; right: 10px; top: -2px;}
+.input-result a.input-cont {text-decoration: underline!important;}

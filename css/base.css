@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* reset */
+html,body{-webkit-font-smoothing:antialiased; font-smoothing:antialiased;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input,select,section,textarea,button {margin:0;padding:0;border:0; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display:block;}
+body {-webkit-text-size-adjust:none}
+dl,ul,ol,menu,li {list-style:none}
+canvas, footer, header, hgroup, menu, nav, section {display:block;}
+img,input,select,textarea,button,label {vertical-align:middle;outline:none;}
+img, video {max-width:100%;}
+input[type=text]::-ms-clear {display: none;}
+input[type=text], input[type=password], input[type=number], input[type=date], input[type=tel], input[type=email], select, textarea {resize:none;border-radius:0;-webkit-appearance:none;
+-moz-appearance:none;appearance: none;}
+select::-ms-expand {display:none;} /* IE 10-11 */
+button::-moz-focus-inner {border:0;padding:0;} /* FF */
+label, button {background-color:transparent;cursor:pointer;}
+a {color: #4c4c4c!important}
+a,a:focus, a:hover {text-decoration:none!important; }
+a:focus, a:hover {color: #000!important}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+legend {display:block;overflow:hidden;position:absolute;top:-1000em;left:0;}
+table caption {visibility:hidden;width:0;height:0;line-height:0;text-indent:-1000em;font-size:0;}
+table {width:100%;table-layout:fixed;border-collapse:collapse;}
+th,td,textarea {word-wrap:break-word;}
+hr {
+	margin:0;
+	display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    border-style: solid;
+    border-width: 1px;
+	border-color:#cfcfcf;
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+}
+p {margin: 0!important}
+

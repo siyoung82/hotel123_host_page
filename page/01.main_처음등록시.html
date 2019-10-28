@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hotel123 Host Administrtor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<link rel="stylesheet" href="../css/index.css" type="text/css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</head>
+
+<body>
+    <div class="u_skip"><a href="#Content">본문 바로가기</a></div>
+	<!-- nav -->
+	<nav>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><span class="fnt0">닫기</span></a>
+		  <div class="my-infobox"><span class="name"><strong>홍길동</strong>님!</span><p>즐거운 여행되세요!</p><a href="#" class="myinfo-btn"><span class="fnt0">내정보관리</span></a></div>
+		  <ul class="menu">
+			  <li><a href="#"><span class="ico-menu ico-menu01"></span>예약현황</a></li>
+			  <li><a href="#"><span class="ico-menu ico-menu02"></span>객실관리</a></li>
+			  <li><a href="#"><span class="ico-menu ico-menu03"></span>메세지함</a></li>
+			  <li><a href="#"><span class="ico-menu ico-menu04"></span>공지사항</a></li>
+			  <li><a href="#"><span class="ico-menu ico-menu05"></span>숙소정보</a></li>
+		  </ul>
+		  <a href="#" class="go-quest-btn">게스트페이지 바로가기</a>
+		</div>
+	</nav>
+	<!-- //nav -->
+    <!-- Wapper -->
+	<div id="Wapper">
+    	<!-- header -->
+        <header>
+            <!--<span class="top-l-button"><a href="#" class="ico-top ico-top-prev">이전</a></span>-->
+			<h1>호텔123 호스트관리</h1>
+			<!--<span class="top-r-button1"><a href="#" class="ico-top ico-top-golbel">알림</a></span>-->
+			<span class="top-r-button2"><a href="#" class="ico-top ico-top-menu" onclick="openNav()">전체메뉴</a></span>
+        </header>
+        <!-- //header -->
+        <!-- content -->
+		<div id="Content">
+	    	<section>
+				<div class="place-add">숙소를 등록하여<br><span class="txt-blue">호스트</span>가 되어보세요</div>
+				<div class="btn-area"><a href="#" class="btn-wrap btn-line-r100">신규등록</a></div>
+			</section>
+    	</div>
+		<!-- //content -->
+	</div>
+	<!-- //Wapper -->
+</body>
+</html>
