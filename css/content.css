@@ -11,12 +11,16 @@
 .host-place-list .pic img {border-radius:10px 10px;}
 .place-info {font-weight: 700;display: block; margin-top: 4px; margin-left: 80px;} 
 .place-info .place-name {font-size: 16px;}
+.place-info .place-name a {color: #333!important;}
 .place-info .add-state-ing {font-size: 14px; color: #2b95ec;}
 .place-info .add-state-end {font-size: 14px; color: #666666;}
 .place-info .add-state-end span {margin-right: 5px}
 .place-info .add-state-end strong{margin-right: 10px;}
-.place-info .sale {font-size: 12px;color: #E96331; font-weight: bold; text-align: right; padding-right: 5px}
-.place-info .discontinued {font-size: 12px;color: #888; font-weight: bold; text-align: right; padding-right: 5px}
+.place-info .sale {color: #E96331; font-weight: bold; }
+.place-info .discontinued {color: #888; font-weight: bold; }
+.place-info p {font-size: 14px; text-align: right;}
+.place-info p strong {padding: 0 5px; }
+.place-info p strong.line {border-right: 1px solid #E2E2E2; padding-right: 10px; margin-right: 10px;}
 
 .place-info-line {display: block; position: relative; overflow: hidden; min-height: 70px;}
 .place-btn-area {display: flex; overflow: hidden; }
@@ -114,6 +118,8 @@
 .cont-box-0 {padding: 0 0 0;  }
 .cont-box-0 h2 {font-weight: bold; color: #2B95EC; font-size: 16px; margin-top: 0!important; margin-bottom: 0!important; padding: 20px; background: #fff;}
 .cont-box-0 h3 {font-size: 14px; margin-top: 0px!important; font-weight: bold;}
+.cont-box-0 h4 {font-size: 12px; margin-top: 0px!important; color: #666;}
+
 .add-pic-area {position: relative; overflow: hidden;}
 .add-pic-list {border: 1px solid #E2E2E2; position: relative; margin-bottom: 10px;}
 .add-pic-list .add-pic img {width: 70px; height: 70px;}
@@ -125,13 +131,14 @@
 .add-pic-list .btn-pic-del span {font-size: 0; line-height: 0; display: none;}
 .check-area {text-align: right; margin-top: 13px;}
 
-.cont-area {position: relative; background: #fff; padding: 20px; margin-top: 10px}
+.cont-area {position: relative; background: #fff; padding: 20px; margin-top: 10px; overflow: hidden;}
 .cont-area .cont-area-top {position: absolute; height: 10px; background: #F6F6F6; padding: 0!important; display: block;}
 .service-list {width: 100%; display: flex; flex-wrap: wrap;}
 .service-list > div {border: 1px solid #E2E2E2; width: 20%; text-align: center; font-size: 10px; height: 56px; margin-left: -1px; margin-top: -1px; }
 .service-list a {display: block}
 .service-list a img {margin-top: 12px;}
-.service-list > div:hover {background: #E4EFF9; color:#2B95EC!important; font-weight: bold;}
+.service-list > div:hover {background: #2B95EC; color:#fff!important; font-weight: bold;}
+.service-list a:hover div{color: #fff!important;}
 .service-list > div.add {background: #E4EFF9;}
 .cont-area .wd70 {width: 65%; float: left}
 .cont-area .wd30 {width: 35%; float: right; text-align: right;}
@@ -144,7 +151,21 @@
 .ico-service-menu05 {width:16px; height:14px;  background-position:0 0px; }
 .ico-service-menu06 {width:16px; height:14px;  background-position:0 0px; }
 .ico-service-menu07 {width:16px; height:14px;  background-position:0 0px; }
+.service-list a:hover .ico-service-menu01 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu02 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu03 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu04 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu05 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu06 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu07 {width:16px; height:14px;  background-position:0 -14px; }
 
+.pic-upload {background: #E4EFF9; text-align: center; border-radius: 10px; padding: 10px;}
+.pic-list div{margin-top: 10px; position: relative}
+.pic-list div:nth-child(odd) {width: 48%; float: left;}
+.pic-list div:nth-child(even) {width: 48%; float: right;}
+.pic-list div img {border-radius: 10px;}
+.pic-list div span {display: inline-block; color: #fff; font-size: 9px; background: #2B95EC; padding: 3px 5px; position: absolute; top: 5px; left: 5px;}
+.added-pic img {min-width: 100%;}
 
 /* 객실관리 */
 .hotel-select-wrap {position: relative; height: 70px;}
@@ -177,7 +198,7 @@
 .input-area input::placeholder,.input-area textarea::placeholder{color: #8DA1B1!important; font-size: 14px!important}
 .input-area select{outline: 0!important; background: url(../images/dropdown_b.png) no-repeat 95% 50%; background-size: 14px 8px;}
 .input-area textarea {padding: 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; color: #4c4c4c!important; box-shadow: none!important; height: 130px!important;}
-.input-area .input-in-btn {position: absolute; right: 0; top: 0; background: #C8DBEC; font-size: 14px; height: 44px; padding: 0 15px; line-height: 44px; font-weight: bold; color: #435463!important; border-radius: 0 5px 5px 0}:hover{}
+.input-area .input-in-btn {position: absolute; right: 0; top: 0; background: #C8DBEC; font-size: 14px; height: 44px; padding: 0 10px; line-height: 44px; font-weight: bold; color: #435463!important; border-radius: 0 5px 5px 0}:hover{}
 
 .input-area textarea:hover,.input-area input[type="text"]:hover,.input-area select:hover {border: 1px solid #2B95EC;}
 

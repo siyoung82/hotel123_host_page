@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hotel123 Host Administrtor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<link rel="stylesheet" href="../css/index.css" type="text/css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="u_skip"><a href="#Content">본문 바로가기</a></div>
+	<!-- nav -->
+	<nav>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><span class="fnt0">닫기</span></a>
+		  <div class="my-infobox"><span class="name"><strong>홍길동</strong>님!</span><p>즐거운 여행되세요!</p><a href="#" class="myinfo-btn"><span class="fnt0">내정보관리</span></a></div>
+		  <ul class="menu">
+			  <li><a href="#"><span class="ico-menu ico-menu01"></span>예약현황</a></li>
+			  <li><a href="#"><span class="ico-menu ico-menu02"></span>객실관리</a></li>
+			  <li><a href="#"><span class="ico-menu ico-menu03"></span>메세지함</a></li>
+			  <li><a href="#"><span class="ico-menu ico-menu04"></span>공지사항</a></li>
+			  <li><a href="#"><span class="ico-menu ico-menu05"></span>숙소정보</a></li>
+		  </ul>
+		  <a href="#" class="go-quest-btn">게스트페이지 바로가기</a>
+		</div>
+	</nav>
+	<!-- //nav -->
+    <!-- Wapper -->
+	<div id="Wapper">
+    	<!-- header -->
+        <header>
+            <span class="top-l-button"><a href="#" class="ico-top ico-top-prev">이전</a></span>
+			<h1>숙소등록</h1>
+			<span class="top-r-button2"><a href="#"><span class="msg-num">12120</span><span class="ico-top ico-top-alarm">메세지</span></a></span>
+        </header>
+        <!-- //header -->
+		<!-- process -->
+		<div class="process-area">
+			<div class="process-tit">숙소정보를 입력해주세요</div>
+			<ul class="process-bar">
+				<li class="active"></li>
+				<li class="active"></li>
+				<li class="active"></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- //process -->
+        <!-- content -->
+		<div id="Content" class="v2 v3">
+			<!-- enter info -->
+			<section>
+				<div class="cont-box-0">
+					<h2>03.부가정보</h2>
+					<div class="cont-area">
+						<h3>기본정보</h3>
+						<h4>게스트에게 숙소에 대한 기본적인 정보를 알려주세요</h4>
+						<form>
+							<div class="form-group input-area">
+								<select class="form-control">
+								<option selected="selected">체크인시간</option>
+								<option>00:00</option>
+								<option>01:00</option>
+								<option>02:00</option>
+								</select>
+							</div>
+							<div class="form-group input-area">
+								<select class="form-control">
+								<option selected="selected">체크아웃시간</option>
+								<option>00:00</option>
+								<option>01:00</option>
+								<option>02:00</option>
+								</select>
+							</div>
+							<div class="form-group input-area">
+								<textarea class="form-control" rows="3" placeholder="[예시]&#10;- 무료Wifi&#10;- 전 객실 금연&#10;- 무료주차&#10;- 취사금지"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="cont-area">
+						<h3>편의시설</h3>
+						<h4>게스트에게 제공될 편의시설을 선택해주세요</h4>
+						<div class="service-list">
+						  <div><a href="#"><span class="ico-service ico-service-menu01"></span><div>무료주차</div></a></div>
+						  <div><a href="#"><span class="ico-service ico-service-menu02"></span><div>무선인터넷</div></a></div>
+						  <div><a href="#"><span class="ico-service ico-service-menu03"></span><div>난방</div></a></div>
+						  <div><a href="#"><span class="ico-service ico-service-menu04"></span><div>정수기</div></a></div>
+						  <div><a href="#"><span class="ico-service ico-service-menu05"></span><div>음료&#40;커피,차&#41;</div></a></div>
+						  <div><a href="#"><span class="ico-service ico-service-menu06"></span><div>냉장고</div></a></div>
+						  <div><a href="#"><span class="ico-service ico-service-menu07"></span><div>내부화장실</div></a></div>
+						</div>
+					</div>
+					<div class="cont-area">
+						<h3>인원추가정보</h3>
+						<h4>게스트에게 인원추가관련 정보를 알려주세요</h4>
+						<form>
+							<div class="form-group input-area">
+								<textarea class="form-control" rows="3" placeholder="[예시]&#10;- 기준인원 외 추가 시:2만원&#10;- 침구추가 시:1만원&#10;- 12세미만 소아 무료투숙가능"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="cont-area">
+						<h3>조식정보</h3>
+						<h4>게스트에게 조식관련정보를 알려주세요</h4>
+						<form>
+							<div class="form-group input-area">
+								<textarea class="form-control" rows="3" placeholder="[예시]&#10;- 성인:10,000원&#10;- 소아:8,000원&#10;- 현금결제만가능"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="cont-area">
+						<h3>부대정보</h3>
+						<h4>게스트에게 숙소 부대정보를 알려주세요</h4>
+						<form>
+							<div class="form-group input-area">
+								<textarea class="form-control" rows="3" placeholder="[예시]&#10;- 프론트 24시간이용가능&#10;- 피트니스:10시~15시 이용가능&#10;- 키즈카페 무료이용"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="cont-area mb40">
+						<h3>유의사항</h3>
+						<h4>게스트에게 숙소이용시 유의사항을 알려주세요</h4>
+						<form>
+							<div class="form-group input-area">
+							<textarea class="form-control" rows="3" placeholder="[예시]&#10;- 22시 이후 입실경우 프론트로 연락주세요&#10;- 모든 추가비용 현장결제&#10;- 구매전 반드시 취소규정 확인부탁드립니다"></textarea>
+						</div>
+						</form>
+					</div>
+			    </div>
+				<!-- button -->
+				<div class="btm-btn-area">
+					<a href="#" class="btm-btn left-btn two-btn">임시저장</a><a href="#" class="btm-btn right-btn two-btn">다음</a>
+				</div>
+				<!-- //button -->
+			</section>
+			<!-- //enter info -->
+			
+    	</div>
+		<!-- //content -->
+	</div>
+	<!-- //Wapper -->
+</body>
+</html>
