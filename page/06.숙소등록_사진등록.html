@@ -69,7 +69,7 @@
 						<h3>사진등록</h3>
 						<div class="pic-upload">
 							<p class="input-btm-txt">등록이미지는 10개까지 가능하며, 이미지를 클릭시<br> 해당이미지 편집이 가능합니다</p>
-							<a href="#" class="btn-line-r5">사진등록</a>
+							<a href="#" class="btn-line-r5" data-toggle="modal" data-target="#account-alert">사진등록</a>
 						</div>
 						<div class="pic-list">
 							<div><span>대표</span><a href="#"><img src="../images/thumnail.png" alt=""/></a></div>
@@ -106,5 +106,43 @@
 		<!-- //content -->
 	</div>
 	<!-- //Wapper -->
+	<!-- Modal -->
+	<div class="modal fade" id="account-alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog vertical-center-modal modal-layer">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">사진등록</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- enter info -->
+					<section>
+						<form>
+						<div class="form-group input-area">
+						  <input type="text" class="form-control" placeholder="사진설명">
+						</div>
+						<p class="input-btm-txt">호스트님! 사용자가 사진내용을 알수 있도록 사진설명을 입력해주세요.</p>
+						</form>
+						<div class="check-area mb10">
+							<input type="checkbox" id="sel-copy" />
+							<label for="sel-copy"><span></span>대표이미지로 설정</label>
+						</div>
+						<div class="added-pic"><img src="../images/thumnail.png" alt=""/></div>
+					</section>
+					<!-- //enter info -->			
+				</div>
+				<div class="modal-footer">
+					<div class="modal-btn-area">
+						<div class="tab-line v1"></div>
+						<button type="button" data-dismiss="modal">삭제</button>
+						<button type="button" data-dismiss="modal">저장</button>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /. modal -->
+	<!-- Modal -->
 </body>
 </html>

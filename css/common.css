@@ -142,6 +142,7 @@ header .top-l-button {position:absolute; left:10px; top:14px;}
 
 .right-btn-area {display: block; text-align: right;}
 .btn-line-r5 {background: #fff; border:1px solid #2b95ec; color: #2b95ec!important; border-radius: 5px; height: 40px; line-height: 40px; padding: 0 20px; display: inline-block; font-weight: bold; font-size: 14px;}
+.btn-line-r5:hover,.btn-line-r5:active,.btn-line-r5:focus{color: #2b95ec!important;}
 .right-btn-area a:hover {color: #fff!important; background:#2b95ec!important; }
 
 
@@ -182,3 +183,25 @@ input[type="checkbox"]:checked + label span {
 	background-size:18px 18px;
 }
 
+/* modal */
+.vertical-center-modal {
+  position:absolute!important;
+  top:50% !important;
+  transform: translate(0, -50%) !important;
+   -ms-transform: translate(0, -50%) !important;
+  -webkit-transform: translate(0, -50%) !important;
+	-o-transform: translate(0, -50%) !important;
+  -moz-transform: translate(0, -50%) !important;
+  margin:auto 5%!important;
+  height:auto!important;
+	width: 90%!important;
+}
+.modal-layer {border-radius: 10px!important; border: 0!important}
+.modal-layer .modal-header {background: #deecf8!important; border-top-right-radius: 10px; border-top-left-radius: 10px; color: #435463!important; font-weight: bold!important; border-bottom: 0!important}
+.modal-layer .modal-header h5 {font-weight: bold!important}
+.tab-line {width: 1px;height: 16px;background-color: #ececec; display: inline-block; position: absolute; left: 50%; top: 15px;}
+.tab-line.v1 { background-color: #ced4e2; height: 12px; top: 3px}
+.modal-layer.modal-footer {background: #fff; padding: 17px 0!important; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;  color: #435463!important; font-weight: bold!important}
+.modal-layer .modal-btn-area {position: relative;}
+.modal-layer .modal-footer button {width: 50%; float: left; font-size: 14px; color: #2B95EC; font-weight: bold;}
+.modal-layer .close {opacity: 1!important; font-size: 26px; color: #435463!important; position: absolute; right: 15px; top: 13px; cursor: pointer}
