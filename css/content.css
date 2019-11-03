@@ -144,8 +144,8 @@
 .service-list > div {border: 1px solid #E2E2E2; width: 20%; text-align: center; font-size: 10px; height: 56px; margin-left: -1px; margin-top: -1px; }
 .service-list a {display: block}
 .service-list a img {margin-top: 12px;}
-.service-list > div:hover {background: #2B95EC; color:#fff!important; font-weight: bold;}
-.service-list a:hover div{color: #fff!important;}
+.service-list > div:hover,.service-list > div.select {background: #2B95EC; color:#fff!important; font-weight: bold;}
+.service-list a:hover div,.service-list > div.select div{color: #fff!important;}
 .service-list > div.add {background: #E4EFF9;}
 .cont-area .wd70 {width: 65%; float: left}
 .cont-area .wd30 {width: 35%; float: right; text-align: right;}
@@ -158,13 +158,13 @@
 .ico-service-menu05 {width:16px; height:14px;  background-position:0 0px; }
 .ico-service-menu06 {width:16px; height:14px;  background-position:0 0px; }
 .ico-service-menu07 {width:16px; height:14px;  background-position:0 0px; }
-.service-list a:hover .ico-service-menu01 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu02 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu03 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu04 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu05 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu06 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu07 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu01,.service-list > div.select .ico-service-menu01 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu02,.service-list > div.select .ico-service-menu02 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu03,.service-list > div.select .ico-service-menu03 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu04,.service-list > div.select .ico-service-menu05 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu05,.service-list > div.select .ico-service-menu06 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu06,.service-list > div.select .ico-service-menu07 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list a:hover .ico-service-menu07,.service-list > div.select .ico-service-menu08 {width:16px; height:14px;  background-position:0 -14px; }
 
 .pic-upload {background: #E4EFF9; text-align: center; border-radius: 10px; padding: 10px;}
 .pic-list div{margin-top: 10px; position: relative}
