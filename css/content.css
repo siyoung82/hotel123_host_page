@@ -12,6 +12,8 @@
 .place-info {font-weight: 700;display: block; margin-top: 4px; margin-left: 80px;} 
 .place-info .place-name {font-size: 16px;}
 .place-info .place-name a {color: #333!important;}
+.place-info .room-info {font-size: 12px; color: #444;}
+.place-info .room-info span {display: block;}
 .place-info .add-state-ing {font-size: 14px; color: #2b95ec;}
 .place-info .add-state-end {font-size: 14px; color: #666666;}
 .place-info .add-state-end span {margin-right: 5px}
@@ -144,8 +146,8 @@
 .service-list > div {border: 1px solid #E2E2E2; width: 20%; text-align: center; font-size: 10px; height: 56px; margin-left: -1px; margin-top: -1px; }
 .service-list a {display: block}
 .service-list a img {margin-top: 12px;}
-.service-list > div:hover,.service-list > div.select {background: #2B95EC; color:#fff!important; font-weight: bold;}
-.service-list a:hover div,.service-list > div.select div{color: #fff!important;}
+.service-list > div.select {background: #2B95EC; color:#fff!important; font-weight: bold;}
+.service-list > div.select div{color: #fff!important;}
 .service-list > div.add {background: #E4EFF9;}
 .cont-area .wd70 {width: 65%; float: left}
 .cont-area .wd30 {width: 35%; float: right; text-align: right;}
@@ -158,13 +160,13 @@
 .ico-service-menu05 {width:16px; height:14px;  background-position:0 0px; }
 .ico-service-menu06 {width:16px; height:14px;  background-position:0 0px; }
 .ico-service-menu07 {width:16px; height:14px;  background-position:0 0px; }
-.service-list a:hover .ico-service-menu01,.service-list > div.select .ico-service-menu01 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu02,.service-list > div.select .ico-service-menu02 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu03,.service-list > div.select .ico-service-menu03 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu04,.service-list > div.select .ico-service-menu05 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu05,.service-list > div.select .ico-service-menu06 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu06,.service-list > div.select .ico-service-menu07 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list a:hover .ico-service-menu07,.service-list > div.select .ico-service-menu08 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list > div.select .ico-service-menu01 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list > div.select .ico-service-menu02 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list > div.select .ico-service-menu03 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list > div.select .ico-service-menu05 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list > div.select .ico-service-menu06 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list > div.select .ico-service-menu07 {width:16px; height:14px;  background-position:0 -14px; }
+.service-list > div.select .ico-service-menu08 {width:16px; height:14px;  background-position:0 -14px; }
 
 .pic-upload {background: #E4EFF9; text-align: center; border-radius: 10px; padding: 10px;}
 .pic-list div{margin-top: 10px; position: relative}
@@ -172,6 +174,11 @@
 .pic-list div:nth-child(even) {width: 48%; float: right;}
 .pic-list div img {border-radius: 10px;}
 .pic-list div span {display: inline-block; color: #fff; font-size: 9px; background: #2B95EC; padding: 3px 5px; position: absolute; top: 5px; left: 5px;}
+.pic-list2 {margin-top: 5px;}
+.pic-list2 div{margin-top: 10px; position: relative; width: 18%; float: left;margin: 3px 1%}
+
+.pic-list2 div img {border-radius: 10px;}
+.pic-list2 div span {display: inline-block; color: #fff; font-size: 9px; background: #2B95EC; padding: 3px 5px; position: absolute; top: 5px; left: 5px;}
 .added-pic img {min-width: 100%;}
 
 /* 예약현황 */
@@ -197,6 +204,18 @@
 .view-way a:hover.view-list {background:url("../images/view-list-hover.png") no-repeat left 13px; background-size: 13px 11px;}
 .view-way a:hover.view-cal {background:url("../images/view-cal-hover.png") no-repeat left 13px; background-size: 13px 11px;}
 
+/* 객실관리 */
+.rooms-add {background: url("../images/cont-img03.png") center top no-repeat; background-size: 97px 97px; text-align: center; padding-top: 110px; font-size: 14px; color: #435463; margin:30% 0 20px 0;}
+.btn-add-rooms-fixed {position: fixed; bottom: 20px; right: 20px;}
+.btn-add-rooms {width: 60px; height: 60px; border-radius: 100% 100%; background: #2B95EC url("../images/btn-plus2.png") no-repeat center center; background-size: 32px 32px; display: block; box-shadow: 5px 5px 20px #96CDF9;}
+.btn-add-rooms span {display: none;}
+.rooms-list li {padding: 20px; overflow: hidden; position: relative; background: #fff; display: block; border-radius: 10px; margin-top: 15px; box-shadow: 0  0px 10px #CCD9E3; }
+.rooms-list li:first-child {margin-top: 0}
+.rooms-list .pic {width: 70px; height: 70px; position: absolute;left: 0; top: 0;}
+.rooms-list .pic img {border-radius:10px 10px;}
+.rooms-list .room-type {font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #E2E2E2; padding-bottom: 10px;}
+.rooms-list .set-room {background:url("../images/btn-cal.png") no-repeat; background-size:18px 18px; display: inline-block; width: 18px; height: 18px; position: absolute; right: 20px; top:20px;}
+.rooms-list .set-room span {display: none;}
 
 /* 달력 */
 .calendar {border-bottom: 1px solid #ddd;}
@@ -205,6 +224,7 @@
 .reserv_calendar td {font-family: 'roboto'; font-size: 14px; padding: 10px 0!important; background: #fff!important; position: relative}
 .reserv_calendar td a {width: 32px; height: 32px; display: inline-block; line-height: 32px; }
 .reserv_calendar th {background: #CFE0EF; color: #435463; font-size: 12px;}
+
 .reserv_calendar td.sunday a,.reserv_calendar th.sunday{color: #EC2647!important}
 .reserv_calendar td.saturday a,.reserv_calendar th.saturday{color: #1378EC!important}
 .reserv_calendar td.muted {color: #Aaa;}

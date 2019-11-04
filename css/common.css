@@ -25,6 +25,8 @@ header .top-l-button {position:absolute; left:10px; top:14px;}
 #Content.v1 {padding: 15px;}
 #Content.v2 {margin-top: 85px!important;}
 #Content.v3 {background: #F6F6F6; padding-bottom: 0}
+#Content.v4 {padding: 15px 15px 45px;}
+
 .sidenav {
   height: 100%;
   width: 0;
