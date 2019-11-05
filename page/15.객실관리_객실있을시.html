@@ -16,6 +16,33 @@ document.getElementById("mySidenav").style.width = "100%";
 function closeNav() {
 document.getElementById("mySidenav").style.width = "0";
 }
+$('.btn-toggle').click(function() {
+    $(this).find('.btn').toggleClass('active');  
+    
+    if ($(this).find('.btn-primary').length>0) {
+    	$(this).find('.btn').toggleClass('btn-primary');
+    }
+    if ($(this).find('.btn-danger').length>0) {
+    	$(this).find('.btn').toggleClass('btn-danger');
+    }
+    if ($(this).find('.btn-success').length>0) {
+    	$(this).find('.btn').toggleClass('btn-success');
+    }
+    if ($(this).find('.btn-info').length>0) {
+    	$(this).find('.btn').toggleClass('btn-info');
+    }
+    
+    $(this).find('.btn').toggleClass('btn-default');
+       
+});
+
+$('form').submit(function(){
+  var radioValue = $("input[name='options']:checked").val();
+  if(radioValue){
+     alert("You selected - " + radioValue);
+   };
+    return false;
+});
 </script>
 </head>
 
@@ -51,7 +78,7 @@ document.getElementById("mySidenav").style.width = "0";
 	    	<section>
 				<ul class="rooms-list">
 					<li>
-						<a href="#" class="set-room"><span>개별설정하기</span></a>
+						<a href="#" class="set-room" data-toggle="modal" data-target="#setting-room-info"><span>개별설정하기</span></a>
 						<div class="room-type">스탠다드</div>
 						<div class="place-info-line">
 							<div class="pic"><img src="../images/thumnail.png" alt="썸네일이미지"/></div>
@@ -107,5 +134,128 @@ document.getElementById("mySidenav").style.width = "0";
 		<!-- //content -->
 	</div>
 	<!-- //Wapper -->
+	<!-- Modal -->
+	<div class="modal fade" id="setting-room-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog vertical-center-modal modal-layer">
+			<div class="modal-content">
+				<div class="modal-header v1">
+					<h5 class="modal-title" id="exampleModalLongTitle">객실개별설정</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body v1">
+					<div class="calendar-ex">설정할 날짜를 선택해주세요</div>
+					<!-- 달력 -->
+					<div class="container">
+						<div class="row">
+							<div class="calendar">
+								<table class="table-condensed table-bordered table-striped reserv_calendar">
+									<thead>
+										<tr>
+										  <th colspan="7" class="month-title-area">
+											<a href="#"><img src="../images/btn-prev_month.png" alt="이전달" width="28"/></a>
+											<a href="#" class="month-title">2019년 10월</a>
+											<a href="#"><img src="../images/btn-next_month.png" alt="다음달" width="28"/></a>
+										  </th>
+										</tr>
+										<tr>
+											<th>일</th>
+											<th>월</th>
+											<th>화</th>
+											<th>수</th>
+											<th>목</th>
+											<th>금</th>
+											<th>토</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a href="#">29</a></td>
+											<td><a href="#">30</a></td>
+											<td><a href="#">31</a></td>
+											<td><a href="#">1</a></td>
+											<td><a href="#">2</a></td>
+											<td><a href="#">3</a></td>
+											<td><a href="#">4</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">5</a></td>
+											<td><span class="not-select">6</span></td> 
+											<td><a href="#" class="comfirm-day">7</a></td><!-- 예약완료 -->
+											<td><a href="#">8</a></td>
+											<td><a href="#">9</a></td>
+											<td><a href="#">10</a></td>
+											<td><a href="#">11</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">12</a></td>
+											<td><a href="#" class="select">13</a></td>
+											<td><a href="#">14</a></td>
+											<td><a href="#">15</a></td>
+											<td><a href="#">16</a></td>
+											<td><a href="#">17</a></td>
+											<td><a href="#">18</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">19</a></td>
+											<td><a href="#">20</a></td>
+											<td><a href="#">21</a></td>
+											<td><a href="#">22</a></td>
+											<td><a href="#">23</a></td>
+											<td><a href="#">24</a></td>
+											<td><a href="#">25</a></td>
+										</tr>
+										<tr>
+											<td><a href="#">26</a></td>
+											<td><a href="#">27</a></td>
+											<td><a href="#">28</a></td>
+											<td><a href="#">29</a></td>
+											<td class="muted">1</td>
+											<td class="muted">2</td>
+											<td class="muted">3</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="day-ex"><span><em></em>판매중</span><span><em></em>판매중지</span><span><em></em>예약완료</span></div>
+					<!-- //달력 -->
+					<div class="reserv-info">
+						<ul>
+							<li>
+								<span>판매</span>
+								<span>
+									<form class="form">
+										<div class="switch-field">
+											<input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+											<label for="radio-one">판매중</label>
+											<input type="radio" id="radio-two" name="switch-one" value="no" />
+											<label for="radio-two">판매중지</label>
+										</div>
+									</form>
+								</span>
+							</li>
+							<li>
+								<span>요금</span>
+								<span>
+									<div class="form-group input-area"><input type="text" class="form-control" value="10000"></div>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-footer v1">
+					<div class="modal-btn-area">
+						<div class="tab-line v1"></div>
+						<button type="button" data-dismiss="modal">초기화</button>
+						<button type="button" data-dismiss="modal">적용하기</button>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /. modal -->
+	<!-- Modal -->
 </body>
 </html>
