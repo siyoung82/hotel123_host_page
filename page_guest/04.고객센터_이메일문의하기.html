@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hotel123 Host Administrtor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<link rel="stylesheet" href="../css/index.css" type="text/css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</head>
+
+<body>
+    <div class="u_skip"><a href="#Content">본문 바로가기</a></div>
+    <!-- Wapper -->
+	<div id="Wapper">
+    	<!-- header -->
+        <header>
+            <span class="top-l-button"><a href="#" class="ico-top ico-top-prev">이전</a></span>
+			<h1>이메일 문의하기</h1>
+        </header>
+        <!-- //header -->
+        <!-- content -->
+		<div id="Content">
+			<section>
+				<div class="email-q-list">
+					<!-- 리스트 -->
+					<!-- tabs -->
+					<ul class="nav nav-tabs email-tabs" id="myTab" role="tablist">
+						<li class="active"><a data-toggle="tab" href="#q-write">문의작성</a></li>
+						<li><a data-toggle="tab" href="#q-list">문의내역</a></li>
+					</ul>
+					<!-- tabs -->
+					<div class="tab-content email-tabs-cont">
+						<!-- 문의작성 -->
+						<div class="tab-pane fade in active area01" id="q-write">
+							<form>
+								<div class="form-group input-area">
+									<input type="text" class="form-control" value="acne3253@gmail.com">
+								</div>
+								<div class="form-group input-area">
+									<select class="form-control">
+									<option selected="selected">유형을 선택해주세요</option>
+									<option>회원관련</option>
+									<option>결제관련</option>
+									<option>취소/환불관련</option>
+									<option>시스템관련</option>
+									</select>
+								</div>
+								<div class="form-group input-area">
+									<textarea class="form-control" rows="3" placeholder="내용을 작성해주세요"></textarea>
+								</div>
+							</form>
+							<a href="#" class="btn-write">작성하기</a>
+						</div>
+						<!-- //문의작성 -->
+						<!-- 문의내역 -->
+						<div class="tab-pane fade in area02" id="q-list">
+							<div class="panel-group email-list" id="notice-list">
+								<div class="panel panel-default email-list-box">
+									<div class="panel-heading collapsed" data-toggle="collapse" data-parent="#notice-list" data-target="#email0">
+										<div class="ready">답변대기</div>
+										<h4 class="panel-title">
+											<a href="#" class="ing"><span>&#91;상품문의&#93;</span>예약가능할까요?<p>2019-04-21</p></a>
+										</h4>
+									</div>
+									<div id="email0" class="panel-collapse collapse" style="height: 0px;">
+										<div class="panel-body">
+											<p>제가 원하는 날짜에 예약하고싶은데마감으로 나옵니다.혹시 대기라도 걸수 있을까요?</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel panel-default email-list-box">
+									<div class="panel-heading collapsed" data-toggle="collapse" data-parent="#notice-list" data-target="#email1">
+										<div class="end">답변완료</div>
+										<h4 class="panel-title">
+											<a href="#" class="ing"><span>&#91;상품문의&#93;</span>예약가능할까요?<p>2019-04-21</p></a>
+										</h4>
+									</div>
+									<div id="email1" class="panel-collapse collapse" style="height: 0px;">
+										<div class="panel-body">
+											<p>제가 원하는 날짜에 예약하고싶은데마감으로 나옵니다.혹시 대기라도 걸수 있을까요?</p>
+										</div>
+										<div class="answer">
+											<div class="end">답변완료</div>
+											<span class="date">2019-04-21</span>
+											<p>안녕하세요 호텔123입니다.문의내역을 확인한 결과 해당 날짜에는 예약이 불가한것으로 나옵니다</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--//panel-group-->
+						</div>
+						<!-- 문의내역 -->
+					</div>
+					<!-- //리스트 -->
+
+				</div>
+			</section>	
+    	</div>
+		<!-- //content -->
+	</div>
+	<!-- //Wapper -->
+</body>
+</html>

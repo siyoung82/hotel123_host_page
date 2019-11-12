@@ -60,28 +60,80 @@ document.getElementById("mySidenav").style.width = "0";
 							<input type="text" class="form-control" placeholder="객실명을 입력해주세요">
 							</div>
 							<div class="form-group input-area">
-								<select class="form-control">
-								<option selected="selected">기본인원을 선택해주세요</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								</select>
+								<div style="width: 48%; float: left;">
+									<label class="v1">기본인원</label>
+									<select class="form-control">
+									<option selected="selected">기본인원</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									</select>
+								</div>
+								<div style="width: 48%; float: right">
+									<label class="v1">최대인원</label>
+									<select class="form-control">
+									<option selected="selected">최대인원</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-group input-area">
+								<label class="v1">객실구조&#40;개&#41;</label>
+								<div style="width: 32%; float: left">
+									<select class="form-control">
+									<option selected="selected">없음</option>
+									<option>방1</option>
+									<option>방2</option>
+									<option>방3</option>
+									</select>
+								</div>
+								<div style="width: 32%; float: left; margin: 0 2%">
+									<select class="form-control">
+									<option selected="selected">없음</option>
+									<option>거실1</option>
+									<option>거실2</option>
+									<option>거실3</option>
+									</select>
+								</div>
+								<div style="width: 32%; float: right">
+									<select class="form-control">
+									<option selected="selected">없음</option>
+									<option>화장실1</option>
+									<option>화장실2</option>
+									<option>화장실3</option>
+									</select>
+								</div>
 							</div>
 							<div class="form-group input-area">
-								<select class="form-control">
-								<option selected="selected">최대인원을 선택해주세요</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								</select>
+								<label class="v1">침실형태&#40;개&#41;</label>
+								<div style="width: 32%; float: left">
+									<select class="form-control">
+									<option selected="selected">없음</option>
+									<option>싱글1</option>
+									<option>싱글2</option>
+									<option>싱글3</option>
+									</select>
+								</div>
+								<div style="width: 32%; float: left; margin: 0 2%">
+									<select class="form-control">
+									<option selected="selected">없음</option>
+									<option>더블1</option>
+									<option>더블2</option>
+									<option>더블3</option>
+									</select>
+								</div>
+								<div style="width: 32%; float: right">
+									<select class="form-control">
+									<option selected="selected">없음</option>
+									<option>온돌</option>
+									</select>
+								</div>
 							</div>
 							<div class="form-group input-area">
-								<input type="text" class="form-control" placeholder="객실구조를 입력해주세요 예)방1,화장실1">
-							</div>
-							<div class="form-group input-area">
-								<input type="text" class="form-control" placeholder="침실형태를 입력해주세요 예)싱글1,더블1,온돌">
-							</div>
-							<div class="form-group input-area">
+								<label class="v1">객실면적</label>
 								<input type="text" class="form-control" placeholder="객실면적을 입력해주세요 예)56㎡">
 							</div>
 						</form>
@@ -91,12 +143,15 @@ document.getElementById("mySidenav").style.width = "0";
 						<h4>게스트에게 객실요금정보에 대해 알려주세요</h4>
 						<form >
 							<div class="form-group input-area">
+								<label class="v1">기본요금</label>
 								<input type="text" class="form-control" placeholder="기본요금을 입력해주세요(원)">
 							</div>
 							<div class="form-group input-area">
+								<label class="v1">주말요금</label>
 								<input type="text" class="form-control" placeholder="주말요금을 입력해주세요(원)">
 							</div>
 							<div class="form-group input-area">
+								<label class="v1">할인요금</label>
 								<input type="text" class="form-control" placeholder="할인요금을 입력해주세요(원)">
 							</div>
 						</form>

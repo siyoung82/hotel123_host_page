@@ -217,6 +217,60 @@
 .rooms-list .set-room {background:url("../images/btn-cal.png") no-repeat; background-size:18px 18px; display: inline-block; width: 18px; height: 18px; position: absolute; right: 20px; top:20px;}
 .rooms-list .set-room span {display: none;}
 
+
+/* 고객센터 */
+.customer-menu-list,.customer-btm-area {padding: 20px;}
+.customer-menu-list>div {border-bottom: 1px solid #E2E2E2; }
+.customer-menu-list>div a {padding: 15px 5px; display: block; color: #000!important; font-weight: 700; background: url("../images/right-arrow.png") 97% 50% no-repeat; background-size: 7px 12px}
+.customer-btm-area {text-align: center;}
+.customer-btm-area h2 {font-size: 18px; font-weight: bold;}
+.customer-btm-area .txt01,.customer-btm-area .txt02 {font-size: 12px;}
+.customer-btm-area .txt02 {color: #888;}
+.customer-btm-area a.btn-kakao {border-radius: 10px; border:1px solid #2B95EC; display: block; padding: 15px 0; font-weight: bold; color: #2B95EC!important; margin: 13px 0 10px;}
+.customer-list {margin-top: 10px; padding: 0 20px}
+.customer-list-box {border:0!important; box-shadow: 0 0 0 0!important; border-radius: 0!important}
+.customer-list-box>.panel-heading {background: #fff!important; border-bottom: 1px solid #E2E2E2!important; border-top: 0!important; padding: 18px 5px!important; font-weight: bold; position: relative}
+.customer-list-box .panel-heading+.panel-collapse>.list-group, .customer-list-box .panel-heading+.panel-collapse>.panel-body {border-top: 0!important;border-bottom: 1px solid #E2E2E2!important;}
+.customer-list-box .panel-title.v1 {padding-left: 37px;}
+.customer-list-box .panel-title p {color: #888888; font-size: 12px; margin-top: 5px!important;; font-weight: normal!important; }
+.customer-list-box .panel-title a{font-weight: bold; color: #000!important}
+.customer-list-box .panel-body {font-size: 13px; background: #F6F6F6}
+.customer-list-box .panel-title .faq-q {display:inline-block; width: 28px; height: 28px; background: #2B95EC; font-family: 'Roboto'; color: #fff!important; border-radius: 100px 100px; text-align: center; line-height: 28px; position: absolute; top: 20px; left: 5px;}
+.faq-select {background: #F6F6F6; padding: 15px 20px 5px;}
+.faq-select .input-area {background: #fff!important;}
+
+.email-q-list {padding: 0 0px; position: relative;}
+.email-q-list section {position: relative}
+
+.email-tabs {border-bottom: 0!important;}
+.email-tabs li {width: 50%; text-align: center}
+.email-tabs li a{font-size: 14px; }
+.email-tabs>li.active>a, .state-tabs>li.active>a:focus, .state-tabs>li.active>a:hover {border: 0!important; border-bottom-color:transparent!important; color: #2B95EC!important; font-weight: bold!important}
+.email-tabs>li>a {border: 0!important; border-bottom-color:transparent!important; background: #DEECF8; margin: 0!important;color: #344451!important; padding: 15px 0!important}
+.email-tabs-cont .area01 {padding: 30px 20px; position: relative}
+.email-tabs-cont .area02 {padding: 0 20px 30px; position: relative}
+
+.email-tabs-cont .btn-write {border-radius: 100px 100px; background: #2B95EC; display: block; height: 51px; line-height: 51px; font-size: 16px; text-align: center; color: #fff!important; font-weight: bold; box-shadow: 0 8px 6px #B7B7B7; position: fixed; bottom: 25px; left: 20px; right: 20px;}
+
+.email-list-box {border:0!important; box-shadow: 0 0 0 0!important; border-radius: 0!important}
+.email-list-box>.panel-heading {background: #fff!important; border-bottom: 1px solid #E2E2E2!important; border-top: 0!important; padding: 15px 5px!important; font-weight: bold; position: relative}
+.email-list-box .panel-heading+.panel-collapse>.list-group, .email-list-box .panel-heading+.panel-collapse>.panel-body {border-top: 0!important;border-bottom: 1px solid #E2E2E2!important;}
+.email-list-box .panel-title.v1 {padding-left: 37px;}
+.email-list-box .panel-title span {color: #2B95EC}
+.email-list-box .panel-title p {color: #888888; font-size: 12px; margin-top: 5px!important;; font-weight: normal!important; }
+.email-list-box .panel-title a{font-weight: bold; color: #000!important}
+.email-list-box .panel-body {font-size: 13px; background: #F6F6F6}
+.email-list-box .panel-title .faq-q {display:inline-block; width: 28px; height: 28px; background: #2B95EC; font-family: 'Roboto'; color: #fff!important; border-radius: 100px 100px; text-align: center; line-height: 28px; position: absolute; top: 20px; left: 5px;}
+.email-list-box>.panel-heading .ready {border:1px solid #BBBBBB; color: #BBBBBB; font-size: 11px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px;}
+.email-list-box>.panel-heading .end   {border:1px solid #FF4D4D; color: #fff; font-size: 11px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px; background: #FF4D4D}
+.email-list-box .answer .end   {border:1px solid #2B95EC; color: #fff; font-size: 11px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px; background: #2B95EC}
+.email-list-box .answer .date {font-size: 10px; color: #888888; position: absolute; top: 15px; right: 15px;}
+.email-list-box .answer {font-size: 13px; background: #F1F8FE; padding: 10px 15px 15px; border-bottom:1px solid #E2E2E2; position: relative}
+.version-info {font-size: 11px; color: #888888; text-align: center; background: #F6F6F6; padding: 15px; position: fixed;bottom: 0; left: 0; right: 0;}
+.agree-cont {padding: 20px}
+.agree-cont h2 {font-size: 14px; font-weight: bold;}
+.agree-cont p {font-size: 12px;}
+
 /* 달력 */
 .calendar {border-bottom: 1px solid #ddd;}
 .reserv_calendar {border: 0!important;}
@@ -251,10 +305,11 @@
 /* form */
 .input-area {margin-bottom: 10px!important; position: relative; overflow: hidden}
 .input-area label {font-size: 12px!important; color: #4c4c4c!important; font-weight: normal!important}
+.input-area label.v1 {color:#2b95ec!important; padding-left: 3px; display: block}
 .input-area input[type="text"],.input-area input[type="password"],.input-area .select-styled,.input-area select {padding: 0 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; height: 44px; color: #4c4c4c!important; box-shadow: none!important; }
 .input-area input[type="text"].v1 {padding: 0 90px 0 12px!important}
 .input-area input::placeholder,.input-area textarea::placeholder{color: #8DA1B1!important; font-size: 14px!important}
-.input-area select{outline: 0!important; background: url(../images/dropdown_b.png) no-repeat 95% 50%; background-size: 14px 8px;}
+.input-area select{outline: 0!important; background: url(../images/dropdown_b.png) no-repeat calc(100% - 10px) 50%; background-size: 14px 8px;}
 .input-area textarea {padding: 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; color: #4c4c4c!important; box-shadow: none!important; height: 130px!important;}
 .input-area .input-in-btn {position: absolute; right: 0; top: 0; background: #C8DBEC; font-size: 14px; height: 44px; padding: 0 10px; line-height: 44px; font-weight: bold; color: #435463!important; border-radius: 0 5px 5px 0}:hover{}
 
