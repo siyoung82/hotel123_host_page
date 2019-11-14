@@ -8,17 +8,36 @@ body,th,td,input,select,textarea,button,a {color:#333; font-family:'Noto Sans','
 /* layout */
 .u_skip{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 #Wapper {position:relative; overflow:hidden; height:100%;}
-header {height:46px; position:fixed; left:0; top:0; width:100%; z-index:99; background: #2b95ec;}
+header {height:46px; position:fixed; left:0; top:0; width:100%; z-index:101; background-color: #2b95ec;}
+header.v1 {background-color: transparent;z-index: 101}
+header.v2 {background-color: #fff;z-index: 101}
+header.v2 h1 {color: #000;}
+header.active {
+    background: #435463;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+header.v1 .hotel-title{
+ height:46px; width:100%; text-align:center; font-size: 16px; line-height:48px; color: #fff; margin: 0!important; font-weight: 700;visibility: hidden;}
+.visible-title {
+    visibility: visible!important;
+}
 header h1 {height:46px; width:100%; text-align:center; font-size: 16px; line-height:48px; color: #fff; margin: 0!important; font-weight: 700}
 header .top-r-button1 {position:absolute; right:35px; top:14px;}
 header .top-r-button2 {position:absolute; right:10px; top:14px;}
 header .top-l-button {position:absolute; left:10px; top:14px;}
 
-.ico-top {background:url("../images/ico-top.png") left top no-repeat; display:inline-block;background-size:20px 100px; text-indent:-99999px;}
+.ico-top {background:url("../images/ico-top.png") left top no-repeat; display:inline-block;background-size:20px 200px; text-indent:-99999px;}
 .ico-top-menu {width:20px; height:18px;  background-position:0 0px; }
 .ico-top-alarm {width:20px; height:18px;  background-position:0 -18px;position: relative }
 .ico-top-prev {width:20px; height:18px;  background-position:0 -36px; }
 .ico-top-close {width:20px; height:18px;  background-position:0 -54px; }
+.ico-top-share {width:20px; height:18px;  background-position:0 -72px; }
+.ico-top-like {width:20px; height:18px;  background-position:0 -90px; }
+.ico-top-likeOn {width:20px; height:18px;  background-position:0 -108px; }
+.ico-top-prev2 {width:20px; height:18px;  background-position:0 -126px; }
+.ico-top-share2 {width:20px; height:18px;  background-position:0 -144px; }
 
 .msg-num {background: #ff4d4d; border-radius: 100px 100px; font-family: 'Roboto'; font-size: 10px; padding:0 3px; min-width: 16px; height: 16px; display: inline-block; color: #fff; text-align: center; line-height: 18px; position: absolute; right: 12px; top: -6px; z-index: 10}
 #Content {overflow:hidden; z-index:97; margin-top:46px; padding-bottom: 60px; }
@@ -26,6 +45,8 @@ header .top-l-button {position:absolute; left:10px; top:14px;}
 #Content.v2 {margin-top: 85px!important;}
 #Content.v3 {background: #F6F6F6; padding-bottom: 0}
 #Content.v4 {padding: 15px 15px 45px;}
+#Content.v5 {margin-top:-46px;}
+
 
 .sidenav {
   height: 100%;
