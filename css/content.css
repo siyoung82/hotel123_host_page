@@ -217,6 +217,14 @@
 .rooms-list .set-room {background:url("../images/btn-cal.png") no-repeat; background-size:18px 18px; display: inline-block; width: 18px; height: 18px; position: absolute; right: 20px; top:20px;}
 .rooms-list .set-room span {display: none;}
 
+/* 메세지함 */
+.msg-list {padding: 5px 15px;}
+.msg-box {border-bottom: 1px solid #E2E2E2; overflow: hidden; display: block; padding: 15px 5px; position: relative;}
+.msg-box p a{font-weight: bold; color: #2B95EC!important; text-decoration: underline!important;}
+.msg-box span {font-size: 12px; color: #888888}
+.msg-box .btn-del {position: absolute; right: 8px; top:50%; background: url("../images/btn-del.png") no-repeat left top; background-size: 18px 18px; width: 22px; height: 22px; margin-top: -9px}
+.msg-box .btn-del span {font-size: 0; line-height: 0; display: none;}
+
 /* 숙소상세 */
 .hotel-info-box {padding: 20px 15px 0;}
 .hotel-info-box .hotel-type {font-size: 12px; color: #2B95EC}
