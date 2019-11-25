@@ -152,21 +152,68 @@
 .cont-area .wd70 {width: 65%; float: left}
 .cont-area .wd30 {width: 35%; float: right; text-align: right;}
 
-.ico-service {background:url("../images/ico-service.png") left top no-repeat; display:inline-block;background-size:16px 100px; text-indent:-99999px; text-align: center; margin-top: 12px;}
-.ico-service-menu01 {width:16px; height:14px;  background-position:0 0px; }
-.ico-service-menu02 {width:16px; height:14px;  background-position:0 0px; }
-.ico-service-menu03 {width:16px; height:14px;  background-position:0 0px; }
-.ico-service-menu04 {width:16px; height:14px;  background-position:0 0px; }
-.ico-service-menu05 {width:16px; height:14px;  background-position:0 0px; }
-.ico-service-menu06 {width:16px; height:14px;  background-position:0 0px; }
-.ico-service-menu07 {width:16px; height:14px;  background-position:0 0px; }
-.service-list > div.select .ico-service-menu01 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list > div.select .ico-service-menu02 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list > div.select .ico-service-menu03 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list > div.select .ico-service-menu05 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list > div.select .ico-service-menu06 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list > div.select .ico-service-menu07 {width:16px; height:14px;  background-position:0 -14px; }
-.service-list > div.select .ico-service-menu08 {width:16px; height:14px;  background-position:0 -14px; }
+.ico-service {background:url("../images/ico-service.png") left top no-repeat; display:inline-block; background-size:24px 1500px; text-indent:-99999px; text-align: center; margin-top: 10px;}
+.ico-service-menu01 {width:24px; height:21px;  background-position:0 0px; }
+.ico-service-menu02 {width:24px; height:21px;  background-position:0 -21px; }
+.ico-service-menu03 {width:24px; height:21px;  background-position:0 -42px; }
+.ico-service-menu04 {width:24px; height:21px;  background-position:0 -63px; }
+.ico-service-menu05 {width:24px; height:21px;  background-position:0 -84px; }
+.ico-service-menu06 {width:24px; height:21px;  background-position:0 -105px; }
+.ico-service-menu07 {width:24px; height:21px;  background-position:0 -126px; }
+.ico-service-menu08 {width:24px; height:21px;  background-position:0 -147px; }
+.ico-service-menu09 {width:24px; height:21px;  background-position:0 -168px; }
+.ico-service-menu10 {width:24px; height:21px;  background-position:0 -189px; }
+.ico-service-menu11 {width:24px; height:21px;  background-position:0 -210px; }
+.ico-service-menu12 {width:24px; height:21px;  background-position:0 -231px; }
+.ico-service-menu13 {width:24px; height:21px;  background-position:0 -252px; }
+.ico-service-menu14 {width:24px; height:21px;  background-position:0 -273px; }
+.ico-service-menu15 {width:24px; height:21px;  background-position:0 -294px; }
+.ico-service-menu16 {width:24px; height:21px;  background-position:0 -315px; }
+.ico-service-menu17 {width:24px; height:21px;  background-position:0 -336px; }
+.ico-service-menu18 {width:24px; height:21px;  background-position:0 -357px; }
+.ico-service-menu19 {width:24px; height:21px;  background-position:0 -378px; }
+.ico-service-menu20 {width:24px; height:21px;  background-position:0 -399px; }
+.ico-service-menu21 {width:24px; height:21px;  background-position:0 -420px; }
+.ico-service-menu22 {width:24px; height:21px;  background-position:0 -441px; }
+.ico-service-menu23 {width:24px; height:21px;  background-position:0 -462px; }
+.ico-service-menu24 {width:24px; height:21px;  background-position:0 -483px; }
+.ico-service-menu25 {width:24px; height:21px;  background-position:0 -504px; }
+.ico-service-menu26 {width:24px; height:21px;  background-position:0 -525px; }
+.ico-service-menu27 {width:24px; height:21px;  background-position:0 -546px; }
+.ico-service-menu28 {width:24px; height:21px;  background-position:0 -567px; }
+.ico-service-menu29 {width:24px; height:21px;  background-position:0 -588px; }
+.ico-service-menu30 {width:24px; height:21px;  background-position:0 -609px; }
+
+.service-list > div.select .ico-service-menu01 {width:24px; height:21px;  background-position:0 -630px; }
+.service-list > div.select .ico-service-menu02 {width:24px; height:21px;  background-position:0 -651px; }
+.service-list > div.select .ico-service-menu03 {width:24px; height:21px;  background-position:0 -672px; }
+.service-list > div.select .ico-service-menu04 {width:24px; height:21px;  background-position:0 -693px; }
+.service-list > div.select .ico-service-menu05 {width:24px; height:21px;  background-position:0 -714px; }
+.service-list > div.select .ico-service-menu06 {width:24px; height:21px;  background-position:0 -735px; }
+.service-list > div.select .ico-service-menu07 {width:24px; height:21px;  background-position:0 -756px; }
+.service-list > div.select .ico-service-menu08 {width:24px; height:21px;  background-position:0 -777px; }
+.service-list > div.select .ico-service-menu09 {width:24px; height:21px;  background-position:0 -798px; }
+.service-list > div.select .ico-service-menu10 {width:24px; height:21px;  background-position:0 -819px; }
+.service-list > div.select .ico-service-menu11 {width:24px; height:21px;  background-position:0 -840px; }
+.service-list > div.select .ico-service-menu12 {width:24px; height:21px;  background-position:0 -861px; }
+.service-list > div.select .ico-service-menu13 {width:24px; height:21px;  background-position:0 -882px; }
+.service-list > div.select .ico-service-menu14 {width:24px; height:21px;  background-position:0 -903px; }
+.service-list > div.select .ico-service-menu15 {width:24px; height:21px;  background-position:0 -924px; }
+.service-list > div.select .ico-service-menu16 {width:24px; height:21px;  background-position:0 -945px; }
+.service-list > div.select .ico-service-menu17 {width:24px; height:21px;  background-position:0 -966px; }
+.service-list > div.select .ico-service-menu18 {width:24px; height:21px;  background-position:0 -987px; }
+.service-list > div.select .ico-service-menu19 {width:24px; height:21px;  background-position:0 -1008px; }
+.service-list > div.select .ico-service-menu20 {width:24px; height:21px;  background-position:0 -1029px; }
+.service-list > div.select .ico-service-menu21 {width:24px; height:21px;  background-position:0 -1050px; }
+.service-list > div.select .ico-service-menu22 {width:24px; height:21px;  background-position:0 -1071px; }
+.service-list > div.select .ico-service-menu23 {width:24px; height:21px;  background-position:0 -1092px; }
+.service-list > div.select .ico-service-menu24 {width:24px; height:21px;  background-position:0 -1113px; }
+.service-list > div.select .ico-service-menu25 {width:24px; height:21px;  background-position:0 -1134px; }
+.service-list > div.select .ico-service-menu26 {width:24px; height:21px;  background-position:0 -1155px; }
+.service-list > div.select .ico-service-menu27 {width:24px; height:21px;  background-position:0 -1176px; }
+.service-list > div.select .ico-service-menu28 {width:24px; height:21px;  background-position:0 -1197px; }
+.service-list > div.select .ico-service-menu29 {width:24px; height:21px;  background-position:0 -1218px; }
+.service-list > div.select .ico-service-menu30 {width:24px; height:21px;  background-position:0 -1239px; }
 
 .pic-upload {background: #E4EFF9; text-align: center; border-radius: 10px; padding: 10px;}
 .pic-list div{margin-top: 10px; position: relative}
@@ -314,23 +361,40 @@ a.total-review {color: #2B95EC!important; font-size: 12px; font-weight: bold; te
 .btn-select-room {border-radius: 100px 100px; background: #2B95EC; display: block; height: 51px; line-height: 51px; font-size: 16px; text-align: center; color: #fff!important; font-weight: bold; box-shadow: 0 8px 6px #B7B7B7; position: fixed; bottom: 25px; left: 20px; right: 20px;}
 
 .guest-service-list {width: 100%; text-align: center; font-size: 12px;}
-.guest-service-list .slick-active {outline: 0!important; border: 0!important}
+.guest-service-list .slick-active ,.guest-service-list a{outline: 0!important; border: 0!important}
 
-.ico-service {background:url("../images/ico-service.png") left top no-repeat; display:inline-block;background-size:30px 188px; text-indent:-99999px; text-align: center; margin-top: 12px; opacity: 0.7}
-.ico-service-menu01 {width:30px; height:26px;  background-position:0 0px; }
-.ico-service-menu02 {width:30px; height:26px;  background-position:0 0px; }
-.ico-service-menu03 {width:30px; height:26px;  background-position:0 0px; }
-.ico-service-menu04 {width:30px; height:26px;  background-position:0 0px; }
-.ico-service-menu05 {width:30px; height:26px;  background-position:0 0px; }
-.ico-service-menu06 {width:30px; height:26px;  background-position:0 0px; }
-.ico-service-menu07 {width:30px; height:26px;  background-position:0 0px; }
-.guest-service-list > div.select .ico-service-menu01 {width:30px; height:26px;  background-position:0 -14px; }
-.guest-service-list > div.select .ico-service-menu02 {width:30px; height:26px;  background-position:0 -14px; }
-.guest-service-list > div.select .ico-service-menu03 {width:30px; height:26px;  background-position:0 -14px; }
-.guest-service-list > div.select .ico-service-menu05 {width:30px; height:26px;  background-position:0 -14px; }
-.guest-service-list > div.select .ico-service-menu06 {width:30px; height:26px;  background-position:0 -14px; }
-.guest-service-list > div.select .ico-service-menu07 {width:30px; height:26px;  background-position:0 -14px; }
-.guest-service-list > div.select .ico-service-menu08 {width:30px; height:26px;  background-position:0 -14px; }
+.ico-guest-service {background:url("../images/ico-service.png") left top no-repeat; display:inline-block; background-size:30px 1875px; text-indent:-99999px; text-align: center; margin-top: 12px; opacity: 0.7}
+.ico-guest-service-menu01 {width:30px; height:26px;  background-position:0 0px; }
+.ico-guest-service-menu02 {width:30px; height:26px;  background-position:0 -26px; }
+.ico-guest-service-menu03 {width:30px; height:26px;  background-position:0 -53px; }
+.ico-guest-service-menu04 {width:30px; height:26px;  background-position:0 -79px; }
+.ico-guest-service-menu05 {width:30px; height:26px;  background-position:0 -105px; }
+.ico-guest-service-menu06 {width:30px; height:26px;  background-position:0 -131px; }
+.ico-guest-service-menu07 {width:30px; height:26px;  background-position:0 -157px; }
+.ico-guest-service-menu08 {width:30px; height:26px;  background-position:0 -184px; }
+.ico-guest-service-menu09 {width:30px; height:26px;  background-position:0 -210px; }
+.ico-guest-service-menu10 {width:30px; height:26px;  background-position:0 -236px; }
+.ico-guest-service-menu11 {width:30px; height:27px;  background-position:0 -262px; }
+.ico-guest-service-menu12 {width:30px; height:26px;  background-position:0 -289px; }
+.ico-guest-service-menu13 {width:30px; height:26px;  background-position:0 -315px; }
+.ico-guest-service-menu14 {width:30px; height:26px;  background-position:0 -341px; }
+.ico-guest-service-menu15 {width:30px; height:26px;  background-position:0 -367px; }
+.ico-guest-service-menu16 {width:30px; height:26px;  background-position:0 -393px; }
+.ico-guest-service-menu17 {width:30px; height:26px;  background-position:0 -420px; }
+.ico-guest-service-menu18 {width:30px; height:26px;  background-position:0 -446px; }
+.ico-guest-service-menu19 {width:30px; height:26px;  background-position:0 -472px; }
+.ico-guest-service-menu20 {width:30px; height:26px;  background-position:0 -499px; }
+.ico-guest-service-menu21 {width:30px; height:26px;  background-position:0 -525px; }
+.ico-guest-service-menu22 {width:30px; height:26px;  background-position:0 -551px; }
+.ico-guest-service-menu23 {width:30px; height:26px;  background-position:0 -577px; }
+.ico-guest-service-menu24 {width:30px; height:26px;  background-position:0 -604px; }
+.ico-guest-service-menu25 {width:30px; height:26px;  background-position:0 -630px; }
+.ico-guest-service-menu26 {width:30px; height:26px;  background-position:0 -656px; }
+.ico-guest-service-menu27 {width:30px; height:26px;  background-position:0 -683px; }
+.ico-guest-service-menu28 {width:30px; height:26px;  background-position:0 -709px; }
+.ico-guest-service-menu29 {width:30px; height:26px;  background-position:0 -735px; }
+.ico-guest-service-menu30 {width:30px; height:26px;  background-position:0 -761px; }
+
 
 
 /* 고객센터 */
