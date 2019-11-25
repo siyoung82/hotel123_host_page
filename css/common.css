@@ -24,7 +24,7 @@ header.v1 .hotel-title{
     visibility: visible!important;
 }
 header h1 {height:46px; width:100%; text-align:center; font-size: 16px; line-height:48px; color: #fff; margin: 0!important; font-weight: 700}
-header .top-r-button1 {position:absolute; right:35px; top:14px;}
+header .top-r-button1 {position:absolute; right:40px; top:14px;}
 header .top-r-button2 {position:absolute; right:10px; top:14px;}
 header .top-l-button {position:absolute; left:10px; top:14px;}
 
@@ -35,7 +35,7 @@ header .top-l-button {position:absolute; left:10px; top:14px;}
 .ico-top-close {width:20px; height:18px;  background-position:0 -54px; }
 .ico-top-share {width:20px; height:18px;  background-position:0 -72px; }
 .ico-top-like {width:20px; height:18px;  background-position:0 -90px; }
-.ico-top-likeOn {width:20px; height:18px;  background-position:0 -108px; }
+.ico-top-like.active,.ico-top-like:hover {width:20px; height:18px;  background-position:0 -108px; }
 .ico-top-prev2 {width:20px; height:18px;  background-position:0 -126px; }
 .ico-top-share2 {width:20px; height:18px;  background-position:0 -144px; }
 
