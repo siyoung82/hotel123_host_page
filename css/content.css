@@ -435,7 +435,8 @@ a.total-review {color: #2B95EC!important; font-size: 12px; font-weight: bold; te
 .input-result {margin-bottom: 10px;padding: 0 12px!important; border-radius: 5px;border: solid 1px #F1F1F1;background-color: #F1F1F1; height: 44px; color: #4c4c4c!important; line-height: 44px; position: relative}
 .input-result .btn-del {position: absolute; right: 10px; top: -2px;}
 .input-result a.input-cont {text-decoration: underline!important;}
-
+.meter {position: absolute; right: 0px; top: 32px}
+.input-back-txt input {width: 90%}
 /* modal */
 .vertical-center-modal {
   position:absolute!important;
