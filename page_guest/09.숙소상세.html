@@ -49,11 +49,14 @@ $().ready(function(){
   });
 });//편의시설
 
+	
 </script>
 </head>
 
 <body>
     <div class="u_skip"><a href="#Content">본문 바로가기</a></div>
+
+	
     <!-- Wapper -->
 	<div id="Wapper">
     	<!-- header -->
@@ -61,7 +64,7 @@ $().ready(function(){
             <span class="top-l-button"><a href="#" class="ico-top ico-top-prev">이전</a></span>
 			<div class="hotel-title">노보텔 앰배서더 서울 용산</div>
 			<span class="top-r-button1"><a href="#" class="ico-top ico-top-share">공유</a></span>
-			<span class="top-r-button2"><a href="#" class="iico-top ico-top-like active">찜</a></span><!-- 찜했을시 active 추가-->
+			<span class="top-r-button2"><a href="#" class="ico-top ico-top-like active">찜</a></span><!-- 찜했을시 active 추가-->
         </header>
         <!-- //header -->
         <!-- content -->
@@ -149,7 +152,57 @@ $().ready(function(){
 						<div class="address">서울시 강남구 논현동 201</div>
 					  <img src="../images/map.png" height="136" alt="지도"/>
 					</div>
-					<div class="btn"><a href="#">주소복사</a><a href="#">길찾기</a><div class="line"></div></div>
+					<div class="btn"><a href="#" class="js-btn">주소복사</a><a href="#">길찾기</a><div class="line"></div></div>
+					<div class="js-fade is-hidden btm-msgbox">주소가 복사되었습니다!</div>
+					<script type="text/javascript">
+							// fade out
+
+					function fadeOut(el) {
+					  el.style.opacity = 1;
+
+					  (function fade() {
+						if ((el.style.opacity -= .1) < 0) {
+						  el.style.display = 'none';
+						  el.classList.add('is-hidden');
+						} else {
+						  requestAnimationFrame(fade);
+						}
+					  })();
+					}
+
+					// fade in
+
+					function fadeIn(el, display) {
+					  if (el.classList.contains('is-hidden')) {
+						el.classList.remove('is-hidden');
+					  }
+					  el.style.opacity = 0;
+					  el.style.display = display || "block";
+
+					  (function fade() {
+						var val = parseFloat(el.style.opacity);
+						if (!((val += .1) > 1)) {
+						  el.style.opacity = val;
+						  requestAnimationFrame(fade);
+						}
+					  })();
+					}
+
+					var btn = document.querySelector('.js-btn');
+					var el = document.querySelector('.js-fade');
+					var timer;
+					btn.addEventListener('click', function(e) {
+					  clearTimeout(timer);
+					  if (el.classList.contains('is-hidden')) {
+						fadeIn(el);
+						timer = setTimeout(function() {
+						  fadeOut(el);
+						}, 2000)
+					  } else {
+						fadeOut(el);
+					  }
+					});
+					</script>
 				</div>
 			</section>
 			<section>
