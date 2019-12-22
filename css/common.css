@@ -57,7 +57,7 @@ header .top-l-button {position:absolute; left:10px; top:14px;}
   background-color: #fff;
   overflow-x: hidden;
   /*transition: 0.5s;*/
-  z-index: 100;
+  z-index: 1000;
 }
 .sidenav .menu {margin-top: 10px;}
 .sidenav .menu a {
@@ -165,6 +165,7 @@ header .top-l-button {position:absolute; left:10px; top:14px;}
 
 .right-btn-area {display: block; text-align: right;}
 .btn-line-r5 {background: #fff; border:1px solid #2b95ec; color: #2b95ec!important; border-radius: 5px; height: 40px; line-height: 40px; padding: 0 20px; display: inline-block; font-weight: bold; font-size: 14px;}
+.btn-line-r5.v1 {background: #fff; border:1px solid #BBBBBB; color: #555555!important; }
 .btn-line-r5:hover,.btn-line-r5:active,.btn-line-r5:focus{color: #2b95ec!important;}
 .right-btn-area a:hover {color: #fff!important; background:#2b95ec!important; }
 
