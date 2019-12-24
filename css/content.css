@@ -325,7 +325,7 @@
 .hotel-intro .map { height: 137px; position: relative; }
 .hotel-intro .map div:first-child { z-index: 100}
 .hotel-intro .map img{max-width: 100%; width: 100%; height: 100%;}
-.hotel-intro .map .address {position: absolute; top: 90px; text-align: center; left:10%; right: 10%; display: inline-block; background-color: rgba(50,74,94,0.8); border-radius: 100px 100px; padding: 8px 10px ;color: #fff; font-size: 12px; z-index: 100}
+.hotel-intro .map .address {position: absolute; top: 80px; text-align: center; left:10%; right: 10%; display: inline-block; background-color: rgba(50,74,94,0.8); border-radius: 100px 100px; padding: 8px 10px ;color: #fff; font-size: 12px; z-index: 100}
 .hotel-intro .btn {width: 100%; border-bottom: 1px solid #E2E2E2; position: relative}
 .hotel-intro .btn a {width: 50%; display: block; float: left; color: #000; padding: 8px 0; text-align: center}
 .hotel-intro .btn a:hover {color: #2B95EC!important; font-weight: bold;}
@@ -623,7 +623,7 @@ border-radius: 100px 100px;}
 .pic-tit {font-size: 12px;text-align: center;background-color: rgba(0, 0, 0, 0.5); display: inline-block;color: #fff; position: absolute; top: 210px; left: 10px; padding: 3px 10px; 
 border-radius: 100px 100px;}
 
-.is-hidden {
+.is-hidden,.zzim-hidden {
   display: none;
 }
 .btm-msgbox {background-color: rgba(0,0,0,0.7); color: #fff; position: fixed; bottom: 80px; left: 20%; right: 20%; border-radius: 100px 100px; text-align: center; padding: 10px 0; font-size: 14px; }
@@ -687,4 +687,4 @@ border-radius: 100px 100px;}
 .review-btm-btn a {margin-left: 10px}
 .review-pic-slider {margin-bottom: 15px}
 .review-pic-slider a img {max-height: 80px; border-radius: 5px}
-.review-list-top {background: #DEECF8; font-size: 11px; color: #344451; padding: 15px 20px}
+.review-list-top {background: #DEECF8; font-size: 12px; color: #344451; padding: 15px 20px}

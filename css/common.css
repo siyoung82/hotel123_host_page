@@ -35,7 +35,7 @@ header .top-l-button {position:absolute; left:10px; top:14px;}
 .ico-top-close {width:20px; height:18px;  background-position:0 -54px; }
 .ico-top-share {width:20px; height:18px;  background-position:0 -72px; }
 .ico-top-like {width:20px; height:18px;  background-position:0 -90px; }
-.ico-top-like.active,.ico-top-like:hover {width:20px; height:18px;  background-position:0 -108px; }
+.ico-top-like.active{width:20px; height:18px;  background-position:0 -108px; }
 .ico-top-prev2 {width:20px; height:18px;  background-position:0 -126px; }
 .ico-top-share2 {width:20px; height:18px;  background-position:0 -144px; }
 

@@ -64,7 +64,57 @@ $().ready(function(){
             <span class="top-l-button"><a href="#" class="ico-top ico-top-prev">이전</a></span>
 			<div class="hotel-title">노보텔 앰배서더 서울 용산</div>
 			<span class="top-r-button1"><a href="#" class="ico-top ico-top-share">공유</a></span>
-			<span class="top-r-button2"><a href="#" class="ico-top ico-top-like active">찜</a></span><!-- 찜했을시 active 추가-->
+			<span class="top-r-button2"><a href="#" class="ico-top ico-top-like active zzim-btn">찜</a></span><!-- 찜했을시 active 추가-->
+			<div class="zzim-fade zzim-hidden btm-msgbox">찜한공간으로 추가되었습니다</div>
+			<script type="text/javascript">
+							// fade out
+
+				function fadeOut(zzim) {
+				  zzim.style.opacity = 1;
+
+				  (function fade() {
+					if ((zzim.style.opacity -= .1) < 0) {
+					  zzim.style.display = 'none';
+					  zzim.classList.add('zzim-hidden');
+					} else {
+					  requestAnimationFrame(fade);
+					}
+				  })();
+				}
+
+				// fade in
+
+				function fadeIn(zzim, display) {
+				  if (zzim.classList.contains('zzim-hidden')) {
+					zzim.classList.remove('zzim-hidden');
+				  }
+				  zzim.style.opacity = 0;
+				  zzim.style.display = display || "block";
+
+				  (function fade() {
+					var val = parseFloat(zzim.style.opacity);
+					if (!((val += .1) > 1)) {
+					  zzim.style.opacity = val;
+					  requestAnimationFrame(fade);
+					}
+				  })();
+				}
+
+				var btn2 = document.querySelector('.zzim-btn');
+				var zzim = document.querySelector('.zzim-fade');
+				var timer;
+				btn2.addEventListener('click', function(e) {
+				  clearTimeout(timer);
+				  if (zzim.classList.contains('zzim-hidden')) {
+					fadeIn(zzim);
+					timer = setTimeout(function() {
+					  fadeOut(zzim);
+					}, 2000)
+				  } else {
+					fadeOut(zzim);
+				  }
+				});
+				</script>
         </header>
         <!-- //header -->
         <!-- content -->
