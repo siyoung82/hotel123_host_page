@@ -40,7 +40,7 @@
 .reservation-info > div {text-align: center;border-right: 1px solid #BFC9D2; padding: 0 15px; width: 33.3%}
 .reservation-info > div:last-child {border-right: 0;}
 .income {background: #BCD5EB; display: flex; display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;padding: 12px 20px; justify-content: center;}
-.income .income-tit {background: url("../images/ico-coins.png")no-repeat; background-size: 14px 13px; font-size: 11px; padding-left: 20px; text-align: left; width: 60%; margin-top: 3px}
+.income .income-tit {background: url("../images/ico-coins.png")no-repeat; background-size: 14px 13px; font-size: 12px; padding-left: 20px; text-align: left; width: 60%; margin-top: 3px}
 .income .income-price {text-align: right; width: 40%;}
 .no-rooms {text-align: center; margin-top: 90px;}
 .add-rooms {color: #EC602B; text-align: center; font-size: 14px; margin-bottom: 20px!important;}
@@ -295,7 +295,7 @@
 .hotel-info-box .review-info .score .star04{background: url("../images/star4.png") no-repeat left top; display: inline-block; width: 62px; height: 11px; background-size: 62px 11px}
 .hotel-info-box .review-info .score .star05{background: url("../images/star5.png") no-repeat left top; display: inline-block; width: 62px; height: 11px; background-size: 62px 11px}
 .hotel-info-box .review-info .review {display: inline-block; float: right;}
-.hotel-info-box .review-info .review span {background:url("../images/ico-review.png") no-repeat left top; color: #707070; font-size: 11px; background-size: 12px 12px; padding-left: 15px; margin-right: 5px; margin-top: 4px; display: inline-block; vertical-align: top;}
+.hotel-info-box .review-info .review span {background:url("../images/ico-review.png") no-repeat left top; color: #707070; font-size: 12px; background-size: 12px 12px; padding-left: 15px; margin-right: 5px; margin-top: 4px; display: inline-block; vertical-align: top;}
 .hotel-info-box .review-info .review a {color: #000; font-weight: bold; background:url("../images/right-arrow2.png") no-repeat right 50%; background-size: 5px 8px; padding: 5px 10px 5px 0; }
 .selected-date {margin-top: 10px; display: block; position: relative; overflow: hidden;}
 .selected-date .checkin,.selected-date .checkout {width: 50%; float: left; text-align: center; border: 1px solid #E2E2E2; padding: 12px 0;}
@@ -337,26 +337,26 @@
 .review-list.v1 .review-box li{padding-bottom: 20px;}
 .review-list .review-box li:last-child {margin-bottom: 0!important; border-bottom: 0!important}
 .review-list.v1 .review-box li:last-child {margin-bottom: 20px!important; border-bottom: 1px solid #E2E2E2!important; }
-
+.review-list.v1 .review-box.v1 {padding: 50px 0}
 .review-list .review-top {overflow: hidden; display: block;}
-.review-list .review-top .type {font-size: 11px; color: #888888;display: inline-block; float: left; vertical-align: middle}
+.review-list .review-top .type {font-size: 12px; color: #888888;display: inline-block; float: left; vertical-align: middle}
 .review-list .review-top .name {font-size: 16px; font-weight: bold; color: #0D0D0D; margin-bottom: 5px}
 .review-list .review-top .sort {font-size: 12px; color: #2B95EC;}
 .review-list .score {display: inline-block; float: left; vertical-align: top; margin-top: -5px;}
-.review-list .score span{font-weight: bold; color: #888; margin-left: 5px; margin-right: 6px; font-size: 11px;}
+.review-list .score span{font-weight: bold; color: #888; margin-left: 5px; margin-right: 6px; font-size: 12px;}
 .review-list .score .star00{background: url("../images/star0.png") no-repeat left top; display: inline-block; width: 62px; height: 11px; background-size: 62px 11px}
 .review-list .score .star01{background: url("../images/star1.png") no-repeat left top; display: inline-block; width: 62px; height: 11px; background-size: 62px 11px}
 .review-list .score .star02{background: url("../images/star2.png") no-repeat left top; display: inline-block; width: 62px; height: 11px; background-size: 62px 11px}
 .review-list .score .star03{background: url("../images/star3.png") no-repeat left top; display: inline-block; width: 62px; height: 11px; background-size: 62px 11px}
 .review-list .score .star04{background: url("../images/star4.png") no-repeat left top; display: inline-block; width: 62px; height: 11px; background-size: 62px 11px}
 .review-list .score .star05{background: url("../images/star5.png") no-repeat left top; display: inline-block; width: 62px; height: 11px; background-size: 62px 11px}
-.review-list .user-info{font-size: 11px; color: #888888;}
+.review-list .user-info{font-size: 12px; color: #888888;}
 .review-list .user-info span {margin: 0 7px; display: inline-block; background: #707070 ;width: 4px; height: 4px; vertical-align: top; border-radius: 100px 100px; margin-top: 5px;}
 .review-list .review-cont {font-size: 14px; padding: 10px 0;}
 .review-list .review-title {margin-bottom: 8px;}
 .review-list .review-title .top-score {background: url("../images/star.png") no-repeat left 5px; background-size: 20px 20px; font-size: 24px; font-weight: bold; color: #000; display: inline-block; padding-left: 25px; }
 .review-list .review-title .review {display: inline-block; }
-.review-list .review-title .review span {color: #707070; font-size: 11px; background-size: 12px 12px; padding-left: 5px; margin-right: 5px; margin-top: 4px; display: inline-block; vertical-align: top;}
+.review-list .review-title .review span {color: #707070; font-size: 12px; background-size: 12px 12px; padding-left: 5px; margin-right: 5px; margin-top: 4px; display: inline-block; vertical-align: top;}
 .review-list .review-title .review a {color: #000; font-weight: bold; background:url("../images/right-arrow2.png") no-repeat right 50%; background-size: 5px 8px; padding: 5px 10px 5px 0; }
 a.total-review {color: #2B95EC!important; font-size: 12px; font-weight: bold; text-align: center; display: block; border-top: 1px solid #E2E2E2; border-bottom: 1px solid #E2E2E2; padding: 12px 0;}
 
@@ -449,12 +449,12 @@ a.btn-select-room:hover {color: #fff;}
 .email-list-box .panel-title a{font-weight: bold; color: #000!important}
 .email-list-box .panel-body {font-size: 13px; background: #F6F6F6}
 .email-list-box .panel-title .faq-q {display:inline-block; width: 28px; height: 28px; background: #2B95EC; font-family: 'Roboto'; color: #fff!important; border-radius: 100px 100px; text-align: center; line-height: 28px; position: absolute; top: 20px; left: 5px;}
-.email-list-box>.panel-heading .ready {border:1px solid #BBBBBB; color: #BBBBBB; font-size: 11px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px;}
-.email-list-box>.panel-heading .end   {border:1px solid #FF4D4D; color: #fff; font-size: 11px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px; background: #FF4D4D}
-.email-list-box .answer .end   {border:1px solid #2B95EC; color: #fff; font-size: 11px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px; background: #2B95EC}
+.email-list-box>.panel-heading .ready {border:1px solid #BBBBBB; color: #BBBBBB; font-size: 12px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px;}
+.email-list-box>.panel-heading .end   {border:1px solid #FF4D4D; color: #fff; font-size: 12px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px; background: #FF4D4D}
+.email-list-box .answer .end   {border:1px solid #2B95EC; color: #fff; font-size: 12px; padding: 5px 8px 3px; display: inline-block; margin-bottom: 8px; background: #2B95EC}
 .email-list-box .answer .date {font-size: 10px; color: #888888; position: absolute; top: 15px; right: 15px;}
 .email-list-box .answer {font-size: 13px; background: #F1F8FE; padding: 10px 15px 15px; border-bottom:1px solid #E2E2E2; position: relative}
-.version-info {font-size: 11px; color: #888888; text-align: center; background: #F6F6F6; padding: 15px; position: fixed;bottom: 0; left: 0; right: 0;}
+.version-info {font-size: 12px; color: #888888; text-align: center; background: #F6F6F6; padding: 15px; position: fixed;bottom: 0; left: 0; right: 0;}
 .agree-cont {padding: 20px}
 .agree-cont h2 {font-size: 14px; font-weight: bold; margin-top: 0!important}
 .agree-cont p {font-size: 12px;}
@@ -484,7 +484,7 @@ a.btn-select-room:hover {color: #fff;}
 .reserv_calendar th.month-title-area {font-size: 19px; color: #435463 ; padding: 10px;}
 .reserv_calendar th a.month-title {padding: 0 10px; margin-top: 3px; display: inline-block; vertical-align: middle;}
 .reserv_calendar td .not-select {text-decoration: line-through; color: #AAAAAA}
-.day-ex {padding: 5px 15px; font-size: 11px;}
+.day-ex {padding: 5px 15px; font-size: 12px;}
 .day-ex span:first-child {color: #333; margin-right: 7px;}
 .day-ex span:nth-child(2){color: #999999; text-decoration: line-through;margin-right: 7px;}
 .day-ex span:last-child {color: #E96331; margin-right: 7px;}
