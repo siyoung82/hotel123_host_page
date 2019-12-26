@@ -1,6 +1,3 @@
-@charset "utf-8";
-
-
 /* main */
 .place-add {background: url("../images/cont-img01.png") center top no-repeat; background-size: 97px 97px; text-align: center; padding-top: 110px; font-weight: 700; margin:30% 0 20px 0;}
 .place-end {background: url("../images/cont-img02.png") center top no-repeat; background-size: 97px 97px; text-align: center; padding-top: 110px; font-weight: 700; margin:20% 0 10px 0;}
@@ -276,7 +273,7 @@
 .hotel-info-box {padding: 20px 15px 0;}
 .hotel-info-box .hotel-type {font-size: 12px; color: #2B95EC}
 .hotel-info-box .hotel-name {font-size: 24px; color: #000; font-weight: bold;}
-.hotel-info-box .room-name {font-size: 18px; color: #000; }
+.hotel-info-box .room-name {font-size: 24px; color: #000; font-weight: bold}
 .hotel-info-box .room-type {font-size: 12px; color: #888;}
 .hotel-info-box .hotel-address {font-size: 13px; background: url("../images/ico-location.png") left 1px no-repeat; background-size: 12px 14px; padding-left: 15px;}
 .hotel-info-box .hotel-address a {background: #000; background:url("../images/right-arrow2.png") no-repeat right 50%; background-size: 5px 8px; padding: 5px 10px 5px 0}
@@ -284,7 +281,7 @@
 .hotel-info-box .price {font-size: 18px; color: #D42E2E; font-weight: bold; margin-top: 10px; text-align: right; font-family: 'Roboto'}
 .hotel-info-box .price span {font-size: 12px; color: #757575}
 .hotel-info-box .end {font-size: 18px; color: #868686; font-weight: bold; margin-top: 10px; text-align: right;}
-.hotel-info-box .selected-date2 {font-size: 12px; font-weight: bold; color: #4E4E4E; text-align: center; border: 1px solid #E2E2E2; padding: 12px 0 10px; margin-bottom: 20px}
+.hotel-info-box .selected-date2 {font-size: 14px; font-weight: bold; color: #2B95EC; text-align: center; border: 1px solid #E2E2E2; padding: 12px 0 10px; margin-bottom: 20px; margin-top: 10px}
 .hotel-info-box .review-info {margin-top: 5px; display: block; position: relative; overflow: hidden;}
 .hotel-info-box .review-info .score {display: inline-block; float: left;}
 .hotel-info-box .review-info .score span{font-weight: bold; color: #2B95EC; margin-right: 6px}
@@ -301,9 +298,9 @@
 .selected-date .checkin,.selected-date .checkout {width: 50%; float: left; text-align: center; border: 1px solid #E2E2E2; padding: 12px 0;}
 .selected-date>div:first-child {border-right:0!important }
 .selected-date .checkin span,.selected-date .checkout span {font-size: 12px;color: #5E5E5E}
-.selected-date .checkin p,.selected-date .checkout p {font-size: 15px;color: #2B95EC; font-weight: bold;}
+.selected-date .checkin p,.selected-date .checkout p {font-size: 17px;color: #2B95EC; font-weight: bold;}
 .selected-date .day{height: 24px; display: inline-block; color: #fff; font-size: 12px; font-weight: bold; background: #435463;  line-height: 24px; position: absolute; top: 50%; left: 50%; width: 40px; margin-left: -20px; margin-top: -12px; border-radius: 100px 100px; text-align: center}
-
+.player {padding: 15px 15px 0;}
 .hotel-rooms-list {}
 .hotel-rooms-list .rooms-info-box {overflow: hidden; position: relative;  display: block; margin-top: 5px}
 .hotel-rooms-list li {overflow: hidden; position: relative; background: #fff; display: block; margin: 20px 15px; border-bottom: 1px solid #E2E2E2; padding-bottom: 20px}
@@ -311,7 +308,7 @@
 .hotel-rooms-list .pic {width: 100px; height: 100px; position: absolute;left: 0; top: 0;}
 .hotel-rooms-list .pic img {border-radius:10px 10px;}
 .hotel-rooms-list .rooms-info .type {font-weight: bold; margin-bottom: 5px;  font-size: 18px;}
-.hotel-rooms-list .rooms-info .info {font-size: 12px; color: #888888}
+.hotel-rooms-list .rooms-info .info {font-size: 13px; color: #888888}
 .hotel-rooms-list .rooms-info .sale {font-size: 12px; color: #757575; text-align: right; font-family: 'Roboto'; text-decoration: line-through; margin-bottom: -12px}
 .hotel-rooms-list .rooms-info .price {font-size: 18px; color: #D42E2E; font-weight: bold; margin-top: 10px; text-align: right; font-family: 'Roboto'}
 .hotel-rooms-list .rooms-info .price span {font-size: 12px; color: #757575}
@@ -321,16 +318,16 @@
 .hotel-intro {}
 .hotel-intro .hotel-intro-txt h3 {font-size: 16px; color: #0D0D0D; font-weight: bold; margin-top: 10px!important}
 .hotel-intro .hotel-intro-txt .ex {font-size: 12px; color: #888888}
-.hotel-intro .hotel-intro-txt{background: #F6F6F6; padding: 20px; text-align: center;}
+.hotel-intro .hotel-intro-txt{background: #F6F6F6; padding: 10px; text-align: center;}
 .hotel-intro .map { height: 137px; position: relative; }
 .hotel-intro .map div:first-child { z-index: 100}
 .hotel-intro .map img{max-width: 100%; width: 100%; height: 100%;}
-.hotel-intro .map .address {position: absolute; top: 80px; text-align: center; left:10%; right: 10%; display: inline-block; background-color: rgba(50,74,94,0.8); border-radius: 100px 100px; padding: 8px 10px ;color: #fff; font-size: 12px; z-index: 100}
+.hotel-intro .map .address {position: absolute; top: 80px; text-align: center; left:5%; right: 5%; display: inline-block; background-color: rgba(50,74,94,0.8); border-radius: 100px 100px; padding: 8px 10px ;color: #fff; font-size: 12px; z-index: 100}
 .hotel-intro .btn {width: 100%; border-bottom: 1px solid #E2E2E2; position: relative}
 .hotel-intro .btn a {width: 50%; display: block; float: left; color: #000; padding: 8px 0; text-align: center}
 .hotel-intro .btn a:hover {color: #2B95EC!important; font-weight: bold;}
 .hotel-intro .btn .line {width: 1px; height: 20px; background: #D9D9D9; position: absolute; left: 50%; display: inline-block; top: 13px;}
-
+div#map_canvas {height: 137px!important}
 .review-list {padding: 15px; margin-bottom: 20px;}
 .review-list.v1 {padding: 20px 15px;}
 .review-list .review-box li {border-bottom: 1px solid #E2E2E2; margin-bottom: 15px;}
@@ -358,14 +355,14 @@
 .review-list .review-title .review {display: inline-block; }
 .review-list .review-title .review span {color: #707070; font-size: 12px; background-size: 12px 12px; padding-left: 5px; margin-right: 5px; margin-top: 4px; display: inline-block; vertical-align: top;}
 .review-list .review-title .review a {color: #000; font-weight: bold; background:url("../images/right-arrow2.png") no-repeat right 50%; background-size: 5px 8px; padding: 5px 10px 5px 0; }
-a.total-review {color: #2B95EC!important; font-size: 12px; font-weight: bold; text-align: center; display: block; border-top: 1px solid #E2E2E2; border-bottom: 1px solid #E2E2E2; padding: 12px 0;}
+a.total-review {color: #2B95EC!important; font-size: 14px; font-weight: bold; text-align: center; display: block; border-top: 1px solid #E2E2E2; border-bottom: 1px solid #E2E2E2; padding: 12px 0;}
 
 .hotel-info-wrap {background: #F6F6F6; overflow: hidden; margin-bottom: 70px; }
 .hotel-info-wrap.v1 {margin-bottom: 30px;}
 .hotel-info-wrap .area-box {margin-top: 10px; background: #fff; padding: 20px 15px;}
-.hotel-info-wrap .area-box h3 {margin-top: 0!important; font-size: 16px; color: #0D0D0D; font-weight: bold;}
+.hotel-info-wrap .area-box h3 {margin-top: 0!important; font-size: 18px; color: #0D0D0D; font-weight: bold;}
 .hotel-info-wrap .area-box ul {margin-bottom: 0!important}
-.hotel-info-wrap .area-box li {color: #777777; font-size: 12px; background: url("../images/bullet.png") no-repeat 5px 5px; background-size: 4px 4px; padding-left: 15px;}
+.hotel-info-wrap .area-box li {color: #777777; font-size: 14px; background: url("../images/bullet.png") no-repeat 5px 5px; background-size: 4px 4px; padding-left: 15px;}
 a.btn-select-room {border-radius: 100px 100px; background: #2B95EC; display: block; height: 51px; line-height: 51px; font-size: 16px; text-align: center; color: #fff!important; font-weight: bold; box-shadow: 0 8px 6px #B7B7B7; position: fixed; bottom: 25px; left: 20px; right: 20px; z-index: 101}
 a.btn-select-room:hover {color: #fff;}
 
