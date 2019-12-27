@@ -628,7 +628,7 @@ border-radius: 100px 100px;}
 
 
 
-.gd-show-modal {position: absolute; bottom: 10px; left: 30%; right: 30%; z-index: 999999}
+.gd-show-modal {position: absolute; bottom: 10px; left: 30%; right: 30%; z-index: 99}
 .gd-show-modal .video { display: block; text-align: center; }
 #m_vod_layer {display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:#232323; box-shadow:1px 1px 10px rgba(0,0,0,0.3);  z-index:99999999;}
 #m_vod_layer #player{display:block; margin:20px auto 0;}
