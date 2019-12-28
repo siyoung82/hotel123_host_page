@@ -6,8 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
 <link rel="stylesheet" href="../css/index.css" type="text/css">
 <link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/datepicker.css">
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/datepicker.js"></script>
+
 <script>
 function openNav() {
 document.getElementById("mySidenav").style.width = "100%";
@@ -16,6 +19,13 @@ document.getElementById("mySidenav").style.width = "100%";
 function closeNav() {
 document.getElementById("mySidenav").style.width = "0";
 }
+
+$(function() {
+      $('[data-toggle="datepicker"]').datepicker({
+        autoHide: true,
+        zIndex: 2048,
+      });
+    });//달력
 </script>
 </head>
 
@@ -68,7 +78,7 @@ document.getElementById("mySidenav").style.width = "0";
 			<!-- //숙소선택 -->
 			<!-- 보기방식선택 -->
 			<div class="view-way">
-				<a href="#" class="view-rooms">객실별로 보기</a><a href="#" class="view-list">전체목록으로 보기</a>
+				<a href="#" class="view-search" data-toggle="modal" data-target="#quick-search">빠른검색</a><a href="#" class="view-rooms">객실별로 보기</a><a href="#" class="view-list">전체목록으로 보기</a>
 			</div>
 			<!-- //보기방식선택 -->
 			<!-- 달력 -->
@@ -270,8 +280,8 @@ document.getElementById("mySidenav").style.width = "0";
 		<!-- //content -->
 	</div>
 	<!-- //Wapper -->
-	<!-- Modal -->
-	<div class="modal fade" id="detail-view" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<!-- Modal 예약상-->
+	<div class="modal fade" id="detail-view" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 9999">
 		<div class="modal-dialog vertical-center-modal modal-layer">
 			<div class="modal-content">
 				<div class="modal-header v1">
@@ -350,6 +360,185 @@ document.getElementById("mySidenav").style.width = "0";
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /. modal -->
-	<!-- Modal -->
+	<!-- Modal 예약상세 -->
+	<!-- Modal 빠른검색 -->
+	<div class="modal fade" id="quick-search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog vertical-center-modal modal-layer">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" >빠른 고객정보 검색</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- enter info -->
+					<section>
+						<form>
+							<div class="form-group input-area">
+								<div style="width: 34%; float: left">
+									<select class="form-control">
+									<option selected="selected">선택</option>
+									<option>이름</option>
+									<option>전화번호</option>
+									</select>
+								</div>
+								<div style="width: 65%; float: right">
+									<input type="text" class="form-control" placeholder="검색어를 입력하세요">
+								</div>
+							</div>
+							<div class="form-group input-area">
+								<label>체크인날짜</label> 
+								<input type="text" class="form-control" data-toggle="datepicker">
+							</div>
+							<a href="#" class="btn-search">검색</a>
+						</form>
+						<div class="rooms-reserv-list v1">
+						<!-- 리스트 -->
+						<section>
+							<!-- tabs -->
+							<ul class="nav nav-tabs state-tabs" role="tablist">
+								<li class="active"><a data-toggle="tab" href="#total">전체</a></li>
+								<li><a data-toggle="tab" href="#comfirm-list">확정</a></li>
+								<li><a data-toggle="tab" href="#waiting-list">대기</a></li>
+								<li><a data-toggle="tab" href="#cancle-list">취소</a></li>
+							</ul>
+							<!-- tabs -->
+							<div class="tab-content comfirm-tabs-cont">
+								<!-- check-in list -->
+								<!-- 전체 -->
+								<div class="tab-pane fade in active">
+									<ul class="reserv-list v1">
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle comfirm"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div class="mb5"><span class="state-circle comfirm"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle comfirm"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle comfirm"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div class="mb5"><span class="state-circle comfirm"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle comfirm"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- //전체 -->
+								<!-- 확정 -->
+								<div class="tab-pane fade in" id="comfirm-list">
+									<ul class="reserv-list v1">
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle comfirm"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div class="mb5"><span class="state-circle comfirm"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- 확정 -->
+								<!-- 대기 -->
+								<div class="tab-pane fade in" id="waiting-list">
+									<ul class="reserv-list v1">
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle wait"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div class="mb5"><span class="state-circle wait"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle wait"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- 대기 -->
+								<!-- 취소 -->
+								<div class="tab-pane fade in" id="cancle-list">
+									<ul class="reserv-list v1">
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle cancle"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div class="mb5"><span class="state-circle cancle"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#detail-view">
+												<div><span class="state-circle cancle"></span><span class="fnt16 user-name">홍길동</span><span class="fnt14 reserv-num">121212121</span></div>
+												<p class="fnt12">스탠다드 더블</p>
+												<p class="fnt12">09.18(수) 14:00  – 09.19(목) 12:00 / 1박</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- 취소 -->
+							</div>
+						</section>
+						<!-- //리스트 -->
+
+					</div>
+					</section>
+					<!-- //enter info -->			
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /. modal -->
+	<!-- Modal 빠른검색 -->
 </body>
 </html>
