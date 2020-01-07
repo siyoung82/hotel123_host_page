@@ -9,7 +9,7 @@ body,th,td,input,select,textarea,button,a {color:#333; font-family:'Noto Sans','
 .u_skip{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
 #Wapper {position:relative; overflow:hidden; height:100%;}
 header {height:46px; position:fixed; left:0; top:0; width:100%; z-index:101; background-color: #2b95ec;}
-header.v1 {background-color: transparent;z-index: 101}
+header.v1 {background-color: transparent;z-index: 101; }
 header.v2 {background-color: #fff;z-index: 101}
 header.v2 h1 {color: #000;}
 header.active {
