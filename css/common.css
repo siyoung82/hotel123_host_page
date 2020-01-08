@@ -150,12 +150,12 @@ header .top-l-button {position:absolute; left:10px; top:14px;}
 .btn-line-r10 {background: #fff; border:1px solid #2b95ec; color: #2b95ec!important; } 
 .btn-filled-r10 {background: #deecf8; border:1px solid #deecf8; color: #435463!important; }
 .btn-filled2-r10 {background: #2b95ec; border:1px solid #2b95ec; color: #fff!important; }
-.btn-line-r10,.btn-filled-r10 {border-radius: 5px 5px; width: 100px; font-size: 14px; height: 38px; line-height: 38px;}
+.btn-line-r10,.btn-filled-r10 {border-radius: 5px 5px; width: 33.3%; font-size: 14px; height: 38px; line-height: 38px;}
 .btn-filled2-r10 {border-radius: 5px 5px; padding: 14px 25px; }
 .btn-filled-r10:hover{color: #435463!important;}
 .btn-filled2-r10:hover{color: #fff!important;}
 .btn-line-r10:hover {color: #2b95ec!important; } 
-
+.place-btn-area2 .btn-line-r10 {width: 100px!important}
 .btm-btn-area {display: block; overflow: hidden; position: fixed; bottom: 0; left: 0; right: 0; height: 52px}
 .btm-btn {display: inline-block; overflow: hidden; color: #fff!important; font-weight: bold; height: 52px; text-align: center; line-height: 52px; }
 .btm-btn-area a:hover {color: #fff!important;}
