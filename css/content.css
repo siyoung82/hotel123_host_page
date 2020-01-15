@@ -1,7 +1,7 @@
 /* main */
 .place-add {background: url("../images/cont-img01.png") center top no-repeat; background-size: 97px 97px; text-align: center; padding-top: 110px; font-weight: 700; margin:30% 0 20px 0;}
 .place-end {background: url("../images/cont-img02.png") center top no-repeat; background-size: 97px 97px; text-align: center; padding-top: 110px; font-weight: 700; margin:20% 0 10px 0;}
-
+.host-place-list {padding-bottom: 100px;}
 .host-place-list li {border-bottom: 1px solid #E2E2E2; padding: 20px 0; overflow: hidden; position: relative;}
 .host-place-list li:first-child {padding-top: 5px;}
 .host-place-list .pic {width: 70px; height: 70px; position: absolute;left: 0; top: 0;}
@@ -479,6 +479,7 @@ a.btn-select-room:hover {color: #fff;}
 .reserv_calendar td.muted {color: #Aaa;}
 .reserv_calendar td a:hover,.reserv_calendar td a.select {background: #2B95EC; border-radius: 100% 100%; color: #fff!important;}
 .reserv_calendar td a.today {border:1px solid #2B95EC; border-radius: 100% 100%; color: #2B95EC!important;}
+.reserv_calendar td a.today:hover{background: #2B95EC; border-radius: 100% 100%; color: #fff!important;} 
 .data-box {position: absolute; bottom: -5px; display: block; text-align: center; width: 30px; left: 50%; margin-left: -15px;}
 .circle-cancel {background: #FF4D4D; width: 6px; height: 6px; display: inline-block; border-radius: 100% 100%; margin: 0 2px}
 .circle-comfirm {background: #2B95EC; width: 6px; height: 6px; display: inline-block; border-radius: 100% 100%; margin: 0 2px}
