@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hotel123 Host Administrtor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<link rel="stylesheet" href="../css/index.css" type="text/css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/slick.css">
+<link rel="stylesheet" href="../css/slick-theme.css">
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script>
+$().ready(function(){
+  $('.review-pic-slider').slick({
+    arrows: false,
+    rows: 1,
+    dots: false,
+    slidesToShow: 4,
+    infinite: false
+  });
+});//후기사진
+	
+</script>
+</head>
+
+<body>
+    <div class="u_skip"><a href="#Content">본문 바로가기</a></div>
+
+	
+    <!-- Wapper -->
+	<div id="Wapper">
+    	<!-- header -->
+        <header>
+            <span class="top-l-button"><a href="#" class="ico-top ico-top-prev">이전</a></span>
+			<h1>나의후기</h1>
+        </header>
+        <!-- //header -->
+        <!-- content -->
+		<div id="Content">
+			<section>
+				<div class="totalreview-list-top">
+					<div class="fl_l mt20">총 <strong>345</strong>개의 후기</div><div class="fl_r star-score">4.0<span>/5</span></div>
+				</div>
+			</section>
+			<section>
+				<div class="review-list v1">				
+					<div class="review-box v1 text-center">
+						등록된 후기가 없습니다.
+					</div>
+				</div>
+			</section>
+    	</div>
+		<!-- //content -->
+	</div>
+	<!-- //Wapper -->
+</body>
+</html>

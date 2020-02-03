@@ -149,6 +149,15 @@ a.btn-search {background: #2b95ec; border-radius: 5px; display: block; text-alig
 .service-list > div.add {background: #E4EFF9;}
 .cont-area .wd70 {width: 65%; float: left}
 .cont-area .wd30 {width: 35%; float: right; text-align: right;}
+.cont-area .priece-sel {text-align: left; margin: 10px 0; border-bottom: 1px solid #E2E2E2; border-top: 1px solid #E2E2E2; background: #F6F6F6; padding: 15px 10px 12px}
+.cont-area .priece-sel input[type="checkbox"] + label {color: #435463;font-size: 13px;}
+.cont-area .breakfast-price {background: #E4EFF9; border-radius: 5px; padding: 15px;}
+.cont-area .breakfast-price input {height: 44px; border:1px solid #FFFFFF; border-radius: 5px; box-shadow: none;}
+.price-add {}
+.price-add>div {display: table; width: 100%}
+.price-add>div>span {display: table-cell; width: 40%; color: #435463; font-size: 12px; padding-left: 3px;}
+.price-add>div>strong {display: table-cell; width: 60%; text-align: right; font-size: 18px; color: #2B95EC; padding-right: 3px;}
+.price-add>div>strong>span {color: #435463; font-size: 12px;}
 
 .ico-service {background:url("../images/ico-service.png") left top no-repeat; display:inline-block; background-size:24px 1500px; text-indent:-99999px; text-align: center; margin-top: 10px;}
 .ico-service-menu01 {width:24px; height:21px;  background-position:0 0px; }
@@ -274,6 +283,8 @@ a.btn-search {background: #2b95ec; border-radius: 5px; display: block; text-alig
 
 /* 숙소상세 */
 .hotel-info-box {padding: 20px 15px 0;}
+.hotel-info-box.v1 {padding: 20px 15px;}
+
 .hotel-info-box .hotel-type {font-size: 12px; color: #2B95EC}
 .hotel-info-box .hotel-name {font-size: 24px; color: #000; font-weight: bold;}
 .hotel-info-box .room-name {font-size: 24px; color: #000; font-weight: bold}
@@ -304,18 +315,29 @@ a.btn-search {background: #2b95ec; border-radius: 5px; display: block; text-alig
 .selected-date .checkin p,.selected-date .checkout p {font-size: 17px;color: #2B95EC; font-weight: bold;}
 .selected-date .day{height: 24px; display: inline-block; color: #fff; font-size: 12px; font-weight: bold; background: #435463;  line-height: 24px; position: absolute; top: 50%; left: 50%; width: 40px; margin-left: -20px; margin-top: -12px; border-radius: 100px 100px; text-align: center}
 .player {padding: 15px 15px 0;}
-.hotel-rooms-list {}
-.hotel-rooms-list .rooms-info-box {overflow: hidden; position: relative;  display: block; margin-top: 5px}
-.hotel-rooms-list li {overflow: hidden; position: relative; background: #fff; display: block; margin: 20px 15px; border-bottom: 1px solid #E2E2E2; padding-bottom: 20px}
-.hotel-rooms-list li:last-child {border-bottom: 0!important; padding-bottom: 0!important}
-.hotel-rooms-list .pic {width: 100px; height: 100px; position: absolute;left: 0; top: 0;}
-.hotel-rooms-list .pic img {border-radius:10px 10px;}
+.hotel-rooms-list {border-top:10px solid #F6F6F6; margin-top: 20px; padding: 15px;}
+.hotel-rooms-list .rooms-info-box {overflow: hidden; position: relative;  display: block; margin-top: 5px; margin-bottom: 25px}
+.hotel-rooms-list .rooms-info-box .type {font-weight: bold; margin-bottom: 5px;  font-size: 18px; position: relative}
+.hotel-rooms-list .rooms-info-box .type span {font-size: 12px; color: #888; padding-left: 5px;}
+.hotel-rooms-list .rooms-info-box .type a {text-align: right; display: inline-block; font-size: 13px; color: #666!important; background:url("../images/right-arrow3.png") right 3px no-repeat; background-size: 6px 10px; padding-right: 13px; position: absolute; right: 10px; top: 4px}
+.hotel-rooms-list .pic {width: 100%; height: 100px;border-radius:10px 10px; overflow: hidden; }
+.hotel-rooms-list .pic img {width: 100%; height: 100%;object-fit: cover; }
+.hotel-rooms-list .rooms-info {border-bottom: 1px solid #e2e2e2; padding-bottom: 15px;}
 .hotel-rooms-list .rooms-info .type {font-weight: bold; margin-bottom: 5px;  font-size: 18px;}
-.hotel-rooms-list .rooms-info .info {font-size: 13px; color: #888888}
+.hotel-rooms-list .rooms-info .info {font-size: 12px; color: #888888; margin-bottom: 4px}
+.hotel-rooms-list .rooms-info .info .person {background:url("../images/ico-user.png") left top no-repeat; background-size: 12px 12px; padding-left: 15px; margin-right: 5px}
+.hotel-rooms-list .rooms-info .info .bedroom {background:url("../images/ico-bed.png") left top no-repeat; background-size: 12px 12px; padding-left: 15px; margin-right: 5px}
+.hotel-rooms-list .rooms-info .info .no-breakfast {background:url("../images/ico-food.png") left top no-repeat; background-size: 12px 12px; padding-left: 15px; margin-right: 5px; }
+.hotel-rooms-list .rooms-info .info .breakfast {background:url("../images/ico-food-hover.png") left top no-repeat; background-size: 12px 12px; padding-left: 15px; margin-right: 5px; }
+
+.hotel-rooms-list .rooms-info .price-area {display: table;width: 100%; padding: 5px}
+.hotel-rooms-list .rooms-info .price-area .price {display: table-cell; width: 70%; vertical-align: middle; padding-right: 10px}
+.hotel-rooms-list .rooms-info .price-area .price p {font-size: 11px; color: #757575}
+.hotel-rooms-list .rooms-info .price-area button {display: block; background: #2B95EC; color: #fff; height: 38px; width: 100%; border-radius: 5px; box-shadow: 0 3px 6px #B7B7B7}
 .hotel-rooms-list .rooms-info .sale {font-size: 12px; color: #757575; text-align: right; font-family: 'Roboto'; text-decoration: line-through; margin-bottom: -12px}
 .hotel-rooms-list .rooms-info .price {font-size: 18px; color: #D42E2E; font-weight: bold; margin-top: 10px; text-align: right; font-family: 'Roboto'}
 .hotel-rooms-list .rooms-info .price span {font-size: 12px; color: #757575}
-.hotel-rooms-list .rooms-info {display: block; position: relative; overflow: hidden; padding-left: 110px; padding-top: 5px }
+.hotel-rooms-list .rooms-info {display: block; position: relative; overflow: hidden; padding-left: 10px; padding-top: 15px }
 .hotel-rooms-list .rooms-info .end {font-size: 18px; color: #868686; font-weight: bold; margin-top: 10px; text-align: right;}
 .hotel-rooms-list .room-news {background: #DEECF8; border-radius: 5px; font-size: 12px; color: #435463; padding: 10px; margin-top: 10px;}
 .hotel-intro {}
@@ -360,8 +382,8 @@ div#map_canvas {height: 137px!important}
 .review-list .review-title .review a {color: #000; font-weight: bold; background:url("../images/right-arrow2.png") no-repeat right 50%; background-size: 5px 8px; padding: 5px 10px 5px 0; }
 a.total-review {color: #2B95EC!important; font-size: 14px; font-weight: bold; text-align: center; display: block; border-top: 1px solid #E2E2E2; border-bottom: 1px solid #E2E2E2; padding: 12px 0;}
 
-.hotel-info-wrap {background: #F6F6F6; overflow: hidden; margin-bottom: 70px; }
-.hotel-info-wrap.v1 {margin-bottom: 30px;}
+.hotel-info-wrap {background: #F6F6F6; overflow: hidden; margin-bottom: 0px; }
+.hotel-info-wrap.v1 {margin-bottom: 0px;}
 .hotel-info-wrap .area-box {margin-top: 10px; background: #fff; padding: 20px 15px;}
 .hotel-info-wrap .area-box h3 {margin-top: 0!important; font-size: 18px; color: #0D0D0D; font-weight: bold;}
 .hotel-info-wrap .area-box ul {margin-bottom: 0!important}
@@ -371,6 +393,18 @@ a.btn-select-room:hover {color: #fff;}
 
 .guest-service-list {width: 100%; text-align: center; font-size: 12px;}
 .guest-service-list .slick-active ,.guest-service-list a{outline: 0!important; border: 0!important}
+.horizontal-scroll {
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+.horizontal-scroll>div {
+  display: inline-block;
+  width:20%;
+  text-align: center;
+}
 
 .ico-guest-service {background:url("../images/ico-service.png") left top no-repeat; display:inline-block; background-size:30px 1875px; text-indent:-99999px; text-align: center; margin-top: 12px; opacity: 0.7}
 .ico-guest-service-menu01 {width:30px; height:26px;  background-position:0 0px; }
@@ -701,4 +735,9 @@ border-radius: 100px 100px;}
 .review-btm-btn a {margin-left: 10px}
 .review-pic-slider {margin-bottom: 15px}
 .review-pic-slider a img {max-height: 80px; border-radius: 5px}
-.review-list-top {background: #DEECF8; font-size: 12px; color: #344451; padding: 15px 20px}
+.review-list-top{background: #DEECF8; font-size: 12px; color: #344451; padding: 15px 20px}
+.totalreview-list-top {overflow: hidden; font-size: 14px; color: #2C353E;background: #DEECF8;padding: 10px 20px}
+.totalreview-list-top strong {color: #2B95EC}
+.totalreview-list-top .star-score {font-size: 32px; color: #000000;font-family: 'Roboto'; background: url("../images/star.png") left 8px no-repeat; background-size: 28px 28px; padding-left: 35px}
+.totalreview-list-top .star-score span {font-size: 14px; color: #606060}
+
