@@ -149,10 +149,11 @@ a.btn-search {background: #2b95ec; border-radius: 5px; display: block; text-alig
 .service-list > div.add {background: #E4EFF9;}
 .cont-area .wd70 {width: 65%; float: left}
 .cont-area .wd30 {width: 35%; float: right; text-align: right;}
-.cont-area .priece-sel {text-align: left; margin: 10px 0; border-bottom: 1px solid #E2E2E2; border-top: 1px solid #E2E2E2; background: #F6F6F6; padding: 15px 10px 12px}
-.cont-area .priece-sel input[type="checkbox"] + label {color: #435463;font-size: 13px;}
-.cont-area .breakfast-price {background: #E4EFF9; border-radius: 5px; padding: 15px;}
-.cont-area .breakfast-price input {height: 44px; border:1px solid #FFFFFF; border-radius: 5px; box-shadow: none;}
+.cont-area .priece-sel {text-align: left; margin: 10px 0; border-bottom: 1px solid #E2E2E2; border-top: 1px solid #E2E2E2; background: #F6F6F6; padding: 15px 10px 12px; margin-bottom: 20px}
+.cont-area .priece-sel input[type="checkbox"] + label {color: #435463;font-size: 13px; margin-right: 10px}
+.cont-area .breakfast-price {background: #E4EFF9; border-radius: 5px; padding: 15px; margin-top: 20px;}
+.cont-area .breakfast-price .input-area select {background: #fff url(../images/dropdown_b.png) no-repeat calc(100% - 10px) 50%; border:0; background-size: 14px 8px; margin-bottom: 10px}
+.cont-area .breakfast-price input {height: 44px; border:1px solid #FFFFFF!important; border-radius: 5px; box-shadow: none;}
 .price-add {}
 .price-add>div {display: table; width: 100%}
 .price-add>div>span {display: table-cell; width: 40%; color: #435463; font-size: 12px; padding-left: 3px;}
@@ -542,7 +543,7 @@ a.btn-select-room:hover {color: #fff;}
 .input-area select{outline: 0!important; background: url(../images/dropdown_b.png) no-repeat calc(100% - 10px) 50%; background-size: 14px 8px;}
 .input-area textarea {padding: 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; color: #4c4c4c!important; box-shadow: none!important; height: 130px!important;}
 .input-area .input-in-btn {position: absolute; right: 0; top: 0; background: #C8DBEC; font-size: 14px; height: 44px; padding: 0 10px; line-height: 44px; font-weight: bold; color: #435463!important; border-radius: 0 5px 5px 0}
-
+.input-area input[type="password"].error {border: 1px solid #FF4D4D;}
 .input-area textarea:hover,.input-area input[type="text"]:hover,.input-area select:hover,.input-area textarea:active,.input-area input[type="text"]:active,.input-area select:active,.input-area textarea:focus,.input-area input[type="text"]:focus,.input-area select:focus {border: 1px solid #2B95EC;}
 
 .hotel-select select{border:0!important; background: transparent url(../images/dropdown-b-w.png) no-repeat right 50%; background-size: 14px 8px; font-size: 18px;  font-weight: bold; color: #fff; margin-top: 20px; outline: 0!important; box-shadow:0 0 0 0!important; width: auto!important; text-align: left; display: inline-block; padding: 6px 17px 6px 12px!important} 
@@ -740,4 +741,13 @@ border-radius: 100px 100px;}
 .totalreview-list-top strong {color: #2B95EC}
 .totalreview-list-top .star-score {font-size: 32px; color: #000000;font-family: 'Roboto'; background: url("../images/star.png") left 8px no-repeat; background-size: 28px 28px; padding-left: 35px}
 .totalreview-list-top .star-score span {font-size: 14px; color: #606060}
+
+/* 비밀번호 재설정 */
+.reset-pw-top {padding: 25px 55px; text-align: center}
+.reset-pw-top p {font-size: 14px; margin-bottom: 0}
+.reset-pw-form {padding: 0 20px;}
+button.reset-pw {border-radius: 100px 100px; background: #2B95EC; display: block; height: 51px; line-height: 51px; font-size: 16px; text-align: center; color: #fff!important; font-weight: bold; box-shadow: 0 8px 6px #B7B7B7; width: 100%  }
+button.reset-pw:disabled {color: #fff;  background: #DEECF8; box-shadow: none;}
+.pw-btn-area {position: fixed; bottom: 25px; left: 20px; right: 20px; z-index: 101;}
+.error-txt {color: #FF4D4D; font-size: 12px; padding-left: 5px }
 
