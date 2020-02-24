@@ -324,7 +324,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
     column-count: 2; } }
 
 .card-login {
-  max-width: 35rem; }
+  max-width: 35rem;  }
 
 .card-register {
   max-width: 40rem; }
@@ -378,5 +378,5 @@ footer.sticky-footer {
 .form-group label{font-size:14px!important;}
 
 .card-header {font-weight:bold; font-size:18px;}
-.m-copyright { color:#777; font-size:12px; margin-top:20px; color:#cdd4ee;}
-.bg-gray{background:#52586f}
+.m-copyright {font-size:12px; margin-top:20px; color:#2E475B}
+.bg-gray{background:#DEECF8}
