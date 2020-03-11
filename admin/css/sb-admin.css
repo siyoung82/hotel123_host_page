@@ -374,9 +374,14 @@ footer.sticky-footer {
 .ft-blue {color:#1342fe;}
 .ft-red {color:#ff2a00;}
 .cont-box {padding:20px 20px 50px 20px!important;}
+.cont-box-reply{padding:20px 20px 50px 20px!important; background: #F1F8FE}
+
 .ft-w {font-weight:bold;}
 .form-group label{font-size:14px!important;}
 
 .card-header {font-weight:bold; font-size:18px;}
 .m-copyright {font-size:12px; margin-top:20px; color:#2E475B}
 .bg-gray{background:#DEECF8}
+.q-ready {color: #df2636}
+.q-end {color: #3c9e0c}
+
