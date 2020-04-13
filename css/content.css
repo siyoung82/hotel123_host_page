@@ -492,10 +492,12 @@ a.btn-select-room:hover {color: #fff;}
 .version-info {font-size: 12px; color: #888888; text-align: center; background: #F6F6F6; padding: 15px; position: fixed;bottom: 0; left: 0; right: 0;}
 .agree-cont {padding: 20px}
 .agree-cont h2 {font-size: 14px; font-weight: bold; margin-top: 0!important}
-.agree-cont p {font-size: 13px;}
+.agree-cont p {font-size: 13px; margin-bottom: 15px!important}
+.agree-cont li {font-size: 13px; margin-bottom: 5px }
+.agree-cont ul {margin-bottom: 15px!important}
 .agree-tabs li {width: 33.3%; text-align: center; overflow: hidden;display: block}
-.agree-tabs li a{font-size: 14px; display: inline-block; height: 60px;}
-.agree-tabs {background: #DEECF8; border-bottom-color:transparent!important; overflow: hidden;display: block; height: 60px; border-bottom: 0!important}
+.agree-tabs li a{font-size: 14px; display: inline-block; padding: 15px 30px!important}
+.agree-tabs {background: #DEECF8; border-bottom-color:transparent!important; overflow: hidden;display: block; border-bottom: 0!important}
 .agree-tabs>li.active>a, .state-tabs>li.active>a:focus, .state-tabs>li.active>a:hover {border-bottom-color:#fff!important}
 .agree-tabs>li.active>a, .state-tabs>li.active>a:focus, .state-tabs>li.active>a:hover {color: #2B95EC!important; font-weight:bold!important}
 .agree-tabs>li>a {border: 0!important; border-bottom-color:transparent!important; background: #DEECF8; border-radius: 0!important; margin-right: 0!important}
@@ -537,14 +539,14 @@ a.btn-select-room:hover {color: #fff;}
 .input-area {margin-bottom: 10px!important; position: relative; overflow: hidden}
 .input-area label {font-size: 12px!important; color: #4c4c4c!important; font-weight: normal!important}
 .input-area label.v1 {color:#2b95ec!important; padding-left: 3px; display: block}
-.input-area input[type="text"],.input-area input[type="password"],.input-area .select-styled,.input-area select {padding: 0 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; height: 44px; color: #4c4c4c!important; box-shadow: none!important; }
+.input-area input[type="text"],.input-area input[type="number"],.input-area input[type="password"],.input-area .select-styled,.input-area select {padding: 0 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; height: 44px; color: #4c4c4c!important; box-shadow: none!important; }
 .input-area input[type="text"].v1 {padding: 0 90px 0 12px!important}
 .input-area input::placeholder,.input-area textarea::placeholder{color: #8DA1B1!important; font-size: 14px!important}
 .input-area select{outline: 0!important; background: url(../images/dropdown_b.png) no-repeat calc(100% - 10px) 50%; background-size: 14px 8px;}
 .input-area textarea {padding: 12px!important; border-radius: 5px;border: solid 1px #e4e4e4;background-color: #ffffff; color: #4c4c4c!important; box-shadow: none!important; height: 130px!important;}
 .input-area .input-in-btn {position: absolute; right: 0; top: 0; background: #C8DBEC; font-size: 14px; height: 44px; padding: 0 10px; line-height: 44px; font-weight: bold; color: #435463!important; border-radius: 0 5px 5px 0}
 .input-area input[type="password"].error {border: 1px solid #FF4D4D;}
-.input-area textarea:hover,.input-area input[type="text"]:hover,.input-area select:hover,.input-area textarea:active,.input-area input[type="text"]:active,.input-area select:active,.input-area textarea:focus,.input-area input[type="text"]:focus,.input-area select:focus {border: 1px solid #2B95EC;}
+.input-area textarea:hover,.input-area input[type="text"]:hover,.input-area input[type="number"]:hover,.input-area select:hover,.input-area textarea:active,.input-area input[type="text"]:active,.input-area select:active,.input-area textarea:focus,.input-area input[type="text"]:focus,.input-area select:focus {border: 1px solid #2B95EC;}
 
 .hotel-select select{border:0!important; background: transparent url(../images/dropdown-b-w.png) no-repeat right 50%; background-size: 14px 8px; font-size: 18px;  font-weight: bold; color: #fff; margin-top: 20px; outline: 0!important; box-shadow:0 0 0 0!important; width: auto!important; text-align: left; display: inline-block; padding: 6px 17px 6px 12px!important} 
 .hotel-select select option {color: #333;}
@@ -566,10 +568,11 @@ a.btn-select-room:hover {color: #fff;}
   height:auto!important;
 	width: 90%!important;
 }
-@media only screen and (max-width: 320px) {
-	.modal-layer .modal-body.v1 {padding: 0!important; overflow-y: auto; height:350px;}
-	
+
+@media only screen and (max-width: 360px) {
+	.agree-tabs li a{font-size: 14px; display: inline-block; padding: 15px 20px!important}
 }
+
 .modal-layer {border-radius: 10px!important; border: 0!important}
 .modal-layer .modal-header {background: #deecf8!important; border-top-right-radius: 10px; border-top-left-radius: 10px; color: #435463!important; font-weight: bold!important; border-bottom: 0!important}
 .modal-layer .modal-header.v1 {background: #fff!important}
