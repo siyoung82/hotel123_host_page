@@ -149,7 +149,14 @@ $('form').submit(function(){
 					<!-- 달력 -->
 					<div class="container">
 						<div class="row">
-							<div class="calendar">
+							<!--<div class="calendar">
+								<tr>
+										  <th colspan="7" class="month-title-area">
+											<a href="#"><img src="../images/btn-prev_month.png" alt="이전달" width="28"/></a>
+											<a href="#" class="month-title">2019년 10월</a>
+											<a href="#"><img src="../images/btn-next_month.png" alt="다음달" width="28"/></a>
+										  </th>
+										</tr>
 								<table class="table-condensed table-bordered table-striped reserv_calendar">
 									<thead>
 										<tr>
@@ -182,7 +189,7 @@ $('form').submit(function(){
 										<tr>
 											<td><a href="#">5</a></td>
 											<td><span class="not-select">6</span></td> 
-											<td><a href="#" class="comfirm-day">7</a></td><!-- 예약완료 -->
+											<td><a href="#" class="comfirm-day">7</a></td>
 											<td><a href="#">8</a></td>
 											<td><a href="#">9</a></td>
 											<td><a href="#">10</a></td>
@@ -217,10 +224,75 @@ $('form').submit(function(){
 										</tr>
 									</tbody>
 								</table>
+							</div>-->
+							<!-- calendal -->
+							<div class="calendar-wrap">
+								<h2 class="month-year"><a href="#"><img src="../images/btn-prev_month.png" alt="이전달" width="28"/></a><span>2020.04</span><a href="#"><img src="../images/btn-next_month.png" alt="다음달" width="28"/></a></h2>
+
+								<table class="price-calendar">
+									<thead>
+									<tr>
+									<th class="day-title" scope="col">일</th>
+									<th class="day-title" scope="col">월</th>
+									<th class="day-title" scope="col">화</th>
+									<th class="day-title" scope="col">수</th>
+									<th class="day-title" scope="col">목</th>
+									<th class="day-title" scope="col">금</th>
+									<th class="day-title" scope="col">토</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr class="week">
+									<td class="day prev-mon" tabindex="0"><span class="day-number">29</span><span class="no-data">&nbsp;</span></td>
+									<td class="day prev-mon" tabindex="0"><span class="day-number">30</span><span class="no-data">&nbsp;</span></td>
+									<td class="day prev-mon" tabindex="0"><span class="day-number">31</span><span class="no-data">&nbsp;</span></td>
+									<td class="day" tabindex="0"><span class="day-number">1</span><span class="no-data">&nbsp;</span></td>
+									<td class="day today" tabindex="0"><span class="day-number">2</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number d-finish">3</span><span class="finish">예약마감</span></td>
+									<td class="day" tabindex="0"><span class="day-number d-stop">4</span><span class="stop">판매중지</span></td>
+									</tr>
+									<tr class="week">
+									<td class="day" tabindex="0"><span class="day-number">5</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">6</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">7</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">8</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">9</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">10</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">11</span><span class="ing">180,000</span></td>
+									</tr>
+									<tr class="week">
+									<td class="day" tabindex="0"><span class="day-number">12</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">13</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">14</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">15</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">16</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">17</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">18</span><span class="ing">180,000</span></td>
+									</tr>
+									<tr class="week">
+									<td class="day" tabindex="0"><span class="day-number">19</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">20</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">21</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">22</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">23</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">24</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">25</span><span class="ing">180,000</span></td>
+									</tr>
+									<tr class="week">
+									<td class="day" tabindex="0"><span class="day-number">26</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">27</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">28</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">29</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">30</span><span class="ing">180,000</span></td>
+									<td class="day" tabindex="0"><span class="day-number">31</span><span class="ing">180,000</span></td>
+									<td class="day next-mon" tabindex="0"><span class="day-number">1</span><span class="no-data">&nbsp;</span></td>
+									</tr>
+									</tbody>
+								</table>
 							</div>
+							<!-- //calendal -->
 						</div>
 					</div>
-					<div class="day-ex"><span><em></em>판매중</span><span><em></em>판매중지</span><span><em></em>예약완료</span></div>
 					<!-- //달력 -->
 					<div class="reserv-info">
 						<ul>
@@ -257,5 +329,136 @@ $('form').submit(function(){
 		</div><!-- /.modal-dialog -->
 	</div><!-- /. modal -->
 	<!-- Modal -->
+	
+<script>//달력 스크립
+
+var dragging = false;
+var days = document.querySelectorAll('.day');
+var offset = 0;
+
+function activateDay() {
+  var activeElement = document.activeElement;
+  var activeAItem = document.querySelector('.active-a');
+  var activeBItem = document.querySelector('.active-b');
+  
+  if (activeAItem && activeBItem) {
+    clearActiveDays();
+    clearRange();
+    activeElement.classList.add('active-a');
+    return;
+  }
+  
+  if (activeAItem) activeElement.classList.add('active-b');
+  else activeElement.classList.add('active-a');
+}
+
+function clearActiveDays() {
+  var activeAItem = document.querySelector('.active-a');
+  var activeBItem = document.querySelector('.active-b');
+  
+  if (activeAItem) activeAItem.classList.remove('active-a');
+  if (activeBItem) activeBItem.classList.remove('active-b');
+}
+
+function clearRange() {
+  days.forEach(item => {
+    item.classList.remove('range');
+  });
+}
+
+function calculateRange() {
+  var activeAIndex, activeBIndex;
+
+  days.forEach((item, index) => {
+    if (item.classList.contains('active-a')) activeAIndex = index;
+    if (item.classList.contains('active-b')) activeBIndex = index;
+  });
+
+  if (activeAIndex < activeBIndex) {
+    for (var i = activeAIndex; i <= activeBIndex; i++) {
+      days[i].classList.add('range');
+    }
+  }
+
+  if (activeAIndex > activeBIndex) {
+    for (var i = activeAIndex; i >= activeBIndex; i--) {
+      days[i].classList.add('range');
+    }
+  }
+}
+
+function startMove(item) {
+  dragging = true;
+  
+  var activeAItem = document.querySelector('.active-a');
+  var activeBItem = document.querySelector('.active-b');
+  
+  if (!activeBItem && activeAItem) {
+    item.classList.add('active-b');
+    calculateRange();
+  } else {
+    clearActiveDays();
+    clearRange();
+    item.classList.add('active-a');
+  }
+}
+
+function move(item) {
+  if (dragging) {
+    var activeA = document.querySelector('.active-a');
+    var prevActiveB = document.querySelector('.active-b');
+
+    clearRange();
+
+    if (prevActiveB) prevActiveB.classList.remove('active-b');
+    if (!item.classList.contains('active-a')) item.classList.add('active-b');
+
+    var activeB = document.querySelector('.active-b');
+
+    calculateRange();
+  }
+}
+
+function endMove(item) {
+  dragging = false;
+}
+
+window.addEventListener('mouseup', e => {
+  dragging = false;
+});
+
+days.forEach((item, index) => {
+  var dayNumber = item.querySelector('.day-number').innerHTML;
+  
+  if (dayNumber === '1' && !item.classList.contains('next-mon')) {
+    offset = index;
+  }
+  
+  item.addEventListener('mousedown', e => {
+    startMove(item);
+  });
+  
+  item.addEventListener('mousemove', e => {
+    move(item);
+  });
+  
+  item.addEventListener('mouseup', e => {
+    endMove(item);
+  });
+});
+
+window.addEventListener('keyup', e => {
+  var key = e.keyCode;
+  
+  switch (key) {
+    case 13:
+      activateDay();
+      calculateRange();
+      break;
+  }
+});
+
+
+</script>
 </body>
 </html>

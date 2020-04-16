@@ -596,7 +596,7 @@ a.btn-select-room:hover {color: #fff;}
 .top-info li {font-size: 14px; display: table; width: 100%;}
 .top-info li span:first-child {display: table-cell; width: 30%; font-weight: bold; color: #435463}
 .top-info li span:last-child {display: table-cell; width: 70%; text-align: right}
-.reserv-info {padding: 15px 15px 0;}
+.reserv-info {padding: 0 15px 0;}
 .reserv-info ul{margin-bottom: 0!important}
 .reserv-info li {font-size: 14px; display: table; width: 100%;}
 .reserv-info li span:first-child {display: table-cell; width: 30%; }
@@ -754,3 +754,161 @@ button.reset-pw:disabled {color: #fff;  background: #DEECF8; box-shadow: none;}
 .pw-btn-area {position: fixed; bottom: 25px; left: 20px; right: 20px; z-index: 101;}
 .error-txt {color: #FF4D4D; font-size: 12px; padding-left: 5px }
 
+
+/* 개별설정 */
+.calendar-wrap {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  user-select: none;
+
+
+}
+
+.month-year {
+  padding-bottom: 0.75em;
+  font-size: 1em;
+  text-align: center;
+	padding-top: 10px;
+	background: #CFE0EF;
+	margin: 0!important;
+	color: #435463;
+	font-weight: bold;
+}
+.month-year span {display: inline-block; vertical-align: middle}
+.month-year a {vertical-align: middle; padding: 0 10px}
+.price-calendar {
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 0.75em;
+  overflow: hidden;
+  border-collapse: collapse;
+  -webkit-tap-highlight-color: transparent;
+}
+.day-title {
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  background: #CFE0EF;
+ text-align: center;
+	padding-bottom: 5px
+}
+
+.day {
+  position: relative;
+  height: 3em;
+	font-size: 14px
+}
+
+.day:focus {
+  outline: none;
+}
+
+.day:focus .day-number::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.day.active-a:focus .day-number::after,
+.day.active-b:focus .day-number::after {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.day:hover span.day-number {
+  color: #0288d1;
+}
+
+.day:first-child {color: #EC2647}
+.day:last-child { color: #1378EC}
+
+.day.range {
+  color: #0288d1;
+  background-color: #e1f5fe;
+}
+
+.day.range.active-a,
+.day:not(.range) + .day.range.active-b {
+  background-color: transparent;
+  box-shadow: inset -1.5em 0 #e1f5fe;
+}
+
+.day.range.active-b,
+.day.range + .day.range.active-a {
+  background-color: transparent;
+  box-shadow: inset 1.5em 0 #e1f5fe;
+}
+
+.day.range.active-a:first-child,
+.day.range.active-b:first-child {
+  box-shadow: none;
+}
+
+.day.range.active-a:first-child + .day.range,
+.day.range.active-b:first-child + .day.range {
+  box-shadow: -1.5em 0 #e1f5fe;
+}
+
+.day.range.active-a:first-child + .day:not(.range),
+.day.range.active-b:first-child + .day:not(.range) {
+  box-shadow: -4.5em 0 #e1f5fe;
+}
+
+.day.range.active-a:first-child + .day.range.active-b {
+  box-shadow:
+    -1.5em 0 #e1f5fe,
+    inset 1.5em 0 #e1f5fe;
+}
+
+.day-number {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  border-radius: 50%;
+}
+
+.day.active-a span.day-number,
+.day.active-b span.day-number {
+  color: #fff;
+  background-color: #03A9F4;
+}
+
+.day.prev-mon .day-number,
+.day.next-mon .day-number {
+  color: rgba(0,0,0,0.3);
+}
+
+.day.prev-mon[class*="active"] .day-number,
+.day.next-mon[class*="active"] .day-number {
+  color: rgba(255,255,255,0.5);
+  background-color: #81D4FA;
+}
+
+.day.today span.day-number {
+  color: #fff;
+  background: #37474F;
+}
+.day .d-stop {text-decoration:line-through; color: #888; background: #eee}
+.day .d-finish {text-decoration:line-through; color:#ff3600; background: #ffd2c6}
+
+.calendar-wrap .reset {
+  display: block;
+}
+
+.calendar-wrap .stop,.calendar-wrap .ing, .calendar-wrap .finish, .calendar-wrap .no-data {font-size: 11px; display: block; background: #fff; padding: 3px 0}
+.calendar-wrap .stop {color: #888}
+.calendar-wrap .finish {color: #ff3600}
