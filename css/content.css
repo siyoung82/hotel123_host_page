@@ -314,7 +314,7 @@ a.btn-search {background: #2b95ec; border-radius: 5px; display: block; text-alig
 .selected-date>div:first-child {border-right:0!important }
 .selected-date .checkin span,.selected-date .checkout span {font-size: 12px;color: #5E5E5E}
 .selected-date .checkin p,.selected-date .checkout p {font-size: 17px;color: #2B95EC; font-weight: bold;}
-.selected-date .day{height: 24px; display: inline-block; color: #fff; font-size: 12px; font-weight: bold; background: #435463;  line-height: 24px; position: absolute; top: 50%; left: 50%; width: 40px; margin-left: -20px; margin-top: -12px; border-radius: 100px 100px; text-align: center}
+.selected-date .day{height: 24px; display: inline-block; color: #fff!important; font-size: 12px; font-weight: bold; background: #435463;  line-height: 24px; position: absolute; top: 50%; left: 50%; width: 40px; margin-left: -20px; margin-top: -12px; border-radius: 100px 100px; text-align: center}
 .player {padding: 15px 15px 0;}
 .hotel-rooms-list {border-top:10px solid #F6F6F6; margin-top: 20px; padding: 15px;}
 .hotel-rooms-list .rooms-info-box {overflow: hidden; position: relative;  display: block; margin-top: 5px; margin-bottom: 25px}
